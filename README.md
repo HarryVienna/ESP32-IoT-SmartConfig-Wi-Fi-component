@@ -1,1 +1,1 @@
-# ESP32-SmartConfig-Wi-Fi-IOT-component
+# ESP32 SmartConfig Wi-Fi IOT component
