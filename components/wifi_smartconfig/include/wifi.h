@@ -34,6 +34,7 @@ struct wifi_s {
 *
 */
 typedef struct wifi_conf_s {
+    char *aes_key;
     char *hostname;
     char *ntp_server;
 } wifi_conf_t;

@@ -18,6 +18,7 @@ void app_main(){
     esp_err_t ret;
 
     static wifi_conf_t wifi_conf = {
+        .aes_key = "ESP32EXAMPLECODE",
         .hostname = "ESP32",
         .ntp_server = "pool.ntp.org",
     };

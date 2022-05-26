@@ -189,7 +189,11 @@ static esp_err_t smartconfig_connect(wifi_t *wifi)
         ESP_LOGE(TAG, "Failed to set smartconfig type");
         return ESP_FAIL;      
     }
-    smartconfig_start_config_t smart_cfg = SMARTCONFIG_START_CONFIG_DEFAULT();
+    smartconfig_start_config_t smart_cfg;
+    smart_cfg.enable_log = false;
+    smart_cfg.esp_touch_v2_enable_crypt = true;
+    smart_cfg.esp_touch_v2_key = smartconfig->config.aes_key;
+    
     if (esp_smartconfig_start(&smart_cfg) != ESP_OK) {
         ESP_LOGE(TAG, "Failed to start smartconfig");
         return ESP_FAIL;   
@@ -369,6 +373,7 @@ wifi_t *wifi_new_smartconfig(const wifi_conf_t *config)
 {
     smartconfig_t *smartconfig = calloc(1, sizeof(smartconfig_t));
     
+    smartconfig->config.aes_key = config->aes_key;
     smartconfig->config.hostname = config->hostname;
     smartconfig->config.ntp_server = config->ntp_server;
 
