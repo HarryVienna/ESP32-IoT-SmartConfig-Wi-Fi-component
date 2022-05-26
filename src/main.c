@@ -31,10 +31,9 @@ void app_main(){
             ret = smartconfig->connect(smartconfig);
         }
         while (ret != ESP_OK);
+
+        smartconfig->init_sntp(smartconfig);
+
+        smartconfig->init_timezone(smartconfig);
     }
-
-    smartconfig->init_sntp(smartconfig);
-
-    smartconfig->init_timezone(smartconfig);
-
 }
