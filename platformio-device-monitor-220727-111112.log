@@ -1,0 +1,1346 @@
+11:11:12.191 > 
+11:11:12.191 > ␛[0;32mI (39) boot.esp32: SPI Speed      : 40MHz␛[0m
+11:11:12.191 > ␛[0;32mI (44) boot.esp32: SPI Mode       : DIO␛[0m
+11:11:12.192 > ␛[0;32mI (48) boot.esp32: SPI Flash Size : 4MB␛[0m
+11:11:12.194 > ␛[0;32mI (53) boot: Enabling RNG early entropy source...␛[0m
+11:11:12.200 > ␛[0;32mI (58) boot: Partition Table:␛[0m
+11:11:12.203 > ␛[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length␛[0m
+11:11:12.211 > ␛[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000␛[0m
+11:11:12.218 > ␛[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000␛[0m
+11:11:12.226 > ␛[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000␛[0m
+11:11:12.234 > ␛[0;32mI (91) boot: End of partition table␛[0m
+11:11:12.238 > ␛[0;32mI (95) boot_comm: chip revision: 3, min. application chip revision: 0␛[0m
+11:11:12.245 > ␛[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=17978h ( 96632) map␛[0m
+11:11:12.277 > ␛[0;32mI (146) esp_image: segment 1: paddr=000279a0 vaddr=3ffb0000 size=0386ch ( 14444) load␛[0m
+11:11:12.286 > ␛[0;32mI (152) esp_image: segment 2: paddr=0002b214 vaddr=40080000 size=04e04h ( 19972) load␛[0m
+11:11:12.294 > ␛[0;32mI (161) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7aeb8h (503480) map␛[0m
+11:11:12.473 > ␛[0;32mI (343) esp_image: segment 4: paddr=000aaee0 vaddr=40084e04 size=0f4f0h ( 62704) load␛[0m
+11:11:12.499 > ␛[0;32mI (369) esp_image: segment 5: paddr=000ba3d8 vaddr=50000000 size=00010h (    16) load␛[0m
+11:11:12.510 > ␛[0;32mI (379) boot: Loaded app from partition at offset 0x10000␛[0m
+11:11:12.516 > ␛[0;32mI (379) boot: Disabling RNG early entropy source...␛[0m
+11:11:12.522 > ␛[0;32mI (391) cpu_start: Pro cpu up.␛[0m
+11:11:12.526 > D (392) efuse: In EFUSE_BLK0__DATA3_REG is used 1 bits starting with 15 bit␛[0m
+11:11:12.533 > D (392) efuse: In EFUSE_BLK0__DATA5_REG is used 1 bits starting with 20 bit␛[0m
+11:11:12.540 > D (398) efuse: In EFUSE_BLK0__DATA3_REG is used 3 bits starting with 9 bit␛[0m
+11:11:12.547 > D (405) efuse: In EFUSE_BLK0__DATA3_REG is used 1 bits starting with 2 bit␛[0m
+11:11:12.554 > ␛[0;32mI (412) cpu_start: Starting app cpu, entry point is 0x400811a8␛[0m
+11:11:12.560 > ␛[0;32mI (0) cpu_start: App cpu up.␛[0m
+11:11:12.642 > D (511) clk: RTC_SLOW_CLK calibration value: 16013783␛[0m
+11:11:12.649 > ␛[0;32mI (517) cpu_start: Pro cpu start user code␛[0m
+11:11:12.654 > ␛[0;32mI (517) cpu_start: cpu freq: 240000000␛[0m
+11:11:12.658 > ␛[0;32mI (517) cpu_start: Application information:␛[0m
+11:11:12.663 > ␛[0;32mI (521) cpu_start: Project name:     Zyklochron␛[0m
+11:11:12.669 > ␛[0;32mI (526) cpu_start: App version:      9dd1ebc-dirty␛[0m
+11:11:12.675 > ␛[0;32mI (532) cpu_start: Compile time:     Jul 27 2022 11:09:09␛[0m
+11:11:12.681 > ␛[0;32mI (538) cpu_start: ELF file SHA256:  d2ad958d918d45d4...␛[0m
+11:11:12.686 > ␛[0;32mI (544) cpu_start: ESP-IDF:          4.4.1␛[0m
+11:11:12.691 > D (549) memory_layout: Checking 7 reserved memory ranges:␛[0m
+11:11:12.696 > D (554) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0␛[0m
+11:11:12.703 > D (561) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb7760␛[0m
+11:11:12.710 > D (567) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440␛[0m
+11:11:12.716 > D (573) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350␛[0m
+11:11:12.722 > D (580) memory_layout: Reserved memory range 0x40070000 - 0x40078000␛[0m
+11:11:12.728 > D (586) memory_layout: Reserved memory range 0x40078000 - 0x40080000␛[0m
+11:11:12.735 > D (593) memory_layout: Reserved memory range 0x40080000 - 0x400942f4␛[0m
+11:11:12.741 > D (599) memory_layout: Building list of available memory regions:␛[0m
+11:11:12.747 > D (605) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000␛[0m
+11:11:12.754 > D (612) memory_layout: Available memory region 0x3ffb7760 - 0x3ffb8000␛[0m
+11:11:12.760 > D (618) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000␛[0m
+11:11:12.767 > D (625) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000␛[0m
+11:11:12.774 > D (632) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000␛[0m
+11:11:12.780 > D (638) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000␛[0m
+11:11:12.787 > D (645) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000␛[0m
+11:11:12.793 > D (651) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000␛[0m
+11:11:12.801 > D (658) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000␛[0m
+11:11:12.808 > D (665) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000␛[0m
+11:11:12.814 > D (671) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000␛[0m
+11:11:12.820 > D (678) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000␛[0m
+11:11:12.826 > D (684) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000␛[0m
+11:11:12.833 > D (691) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000␛[0m
+11:11:12.841 > D (698) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000␛[0m
+11:11:12.847 > D (704) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000␛[0m
+11:11:12.853 > D (711) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000␛[0m
+11:11:12.860 > D (717) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000␛[0m
+11:11:12.866 > D (724) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000␛[0m
+11:11:12.874 > D (731) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20␛[0m
+11:11:12.880 > D (737) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000␛[0m
+11:11:12.886 > D (744) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000␛[0m
+11:11:12.893 > D (750) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000␛[0m
+11:11:12.900 > D (757) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000␛[0m
+11:11:12.907 > D (764) memory_layout: Available memory region 0x3fffc000 - 0x40000000␛[0m
+11:11:12.912 > D (770) memory_layout: Available memory region 0x400942f4 - 0x40096000␛[0m
+11:11:12.920 > D (777) memory_layout: Available memory region 0x40096000 - 0x40098000␛[0m
+11:11:12.926 > D (783) memory_layout: Available memory region 0x40098000 - 0x4009a000␛[0m
+11:11:12.933 > D (790) memory_layout: Available memory region 0x4009a000 - 0x4009c000␛[0m
+11:11:12.939 > D (797) memory_layout: Available memory region 0x4009c000 - 0x4009e000␛[0m
+11:11:12.946 > D (803) memory_layout: Available memory region 0x4009e000 - 0x400a0000␛[0m
+11:11:12.953 > ␛[0;32mI (810) heap_init: Initializing. RAM available for dynamic allocation:␛[0m
+11:11:12.960 > D (817) heap_init: New heap initialised at 0x3ffae6e0␛[0m
+11:11:12.965 > ␛[0;32mI (822) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM␛[0m
+11:11:12.970 > D (828) heap_init: New heap initialised at 0x3ffb7760␛[0m
+11:11:12.975 > ␛[0;32mI (833) heap_init: At 3FFB7760 len 000288A0 (162 KiB): DRAM␛[0m
+11:11:12.982 > ␛[0;32mI (840) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM␛[0m
+11:11:12.989 > ␛[0;32mI (846) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM␛[0m
+11:11:12.995 > D (852) heap_init: New heap initialised at 0x400942f4␛[0m
+11:11:13.000 > ␛[0;32mI (857) heap_init: At 400942F4 len 0000BD0C (47 KiB): IRAM␛[0m
+11:11:13.007 > D (864) intr_alloc: Connected src 46 to int 2 (cpu 0)␛[0m
+11:11:13.012 > D (869) FLASH_HAL: extra_dummy: 1␛[0m
+11:11:13.015 > D (872) spi_flash: trying chip: issi␛[0m
+11:11:13.018 > D (876) spi_flash: trying chip: gd␛[0m
+11:11:13.021 > D (879) spi_flash: trying chip: mxic␛[0m
+11:11:13.025 > D (883) spi_flash: trying chip: winbond␛[0m
+11:11:13.029 > D (887) spi_flash: trying chip: generic␛[0m
+11:11:13.033 > ␛[0;32mI (891) spi_flash: detected chip: generic␛[0m
+11:11:13.037 > ␛[0;32mI (895) spi_flash: flash io: dio␛[0m
+11:11:13.042 > D (899) cpu_start: calling init function: 0x4014582c␛[0m
+11:11:13.047 > D (904) cpu_start: calling init function: 0x40144d58␛[0m
+11:11:13.052 > D (910) cpu_start: calling init function: 0x40142bdc␛[0m
+11:11:13.057 > D (914) cpu_start: calling init function: 0x400d582c␛[0m
+11:11:13.062 > D (920) cpu_start: calling init function: 0x400d27e4␛[0m
+11:11:13.067 > D (925) intr_alloc: Connected src 17 to int 3 (cpu 0)␛[0m
+11:11:13.072 > D (930) intr_alloc: Connected src 24 to int 9 (cpu 0)␛[0m
+11:11:13.077 > ␛[0;32mI (935) cpu_start: Starting scheduler on PRO CPU.␛[0m
+11:11:13.082 > D (0) intr_alloc: Connected src 25 to int 2 (cpu 1)␛[0m
+11:11:13.087 > ␛[0;32mI (0) cpu_start: Starting scheduler on APP CPU.␛[0m
+11:11:13.093 > D (960) heap_init: New heap initialised at 0x3ffe0440␛[0m
+11:11:13.097 > D (960) heap_init: New heap initialised at 0x3ffe4350␛[0m
+11:11:13.102 > D (970) partition: Loading the partition table␛[0m
+11:11:13.107 > D (970) partition: Partition table MD5 verified␛[0m
+11:11:13.123 > D (1000) event: running task for loop 0x3ffbbd74␛[0m
+11:11:13.128 > D (1000) event: created task for loop 0x3ffbbd74␛[0m
+11:11:13.133 > D (1000) event: created event loop 0x3ffbbd74␛[0m
+11:11:13.137 > D (1000) esp_netif_lwip: LwIP stack has been initialized␛[0m
+11:11:13.142 > D (1000) esp_netif_lwip: esp-netif has been successfully initialized␛[0m
+11:11:13.149 > D (1010) esp_netif_objects: esp_netif_add_to_list 0x3ffbdf94␛[0m
+11:11:13.155 > D (1020) esp_netif_objects: esp_netif_add_to_list netif added successfully (total netifs: 1)␛[0m
+11:11:13.162 > D (1030) esp_netif_lwip: check: remote, if=0x3ffbdf94 fn=0x400d322c
+11:11:13.168 > ␛[0m
+11:11:13.169 > D (1030) esp_netif_lwip: esp_netif_set_hostname_api esp_netif:0x3ffbdf94 hostname ESP32␛[0m
+11:11:13.177 > D (1040) esp_netif_lwip: call api in lwip: ret=0x0, give sem␛[0m
+11:11:13.183 > D (1050) nvs: nvs_open_from_partition misc 1␛[0m
+11:11:13.188 > I (1060) wifi:wifi driver task: 3ffc0620, prio:23, stack:6656, core=0
+11:11:13.194 > ␛[0;32mI (1060) system_api: Base MAC address is not set␛[0m
+11:11:13.199 > ␛[0;32mI (1060) system_api: read default base MAC address from EFUSE␛[0m
+11:11:13.205 > D (1070) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.212 > D (1070) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.219 > D (1080) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit␛[0m
+11:11:13.226 > D (1090) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.233 > D (1100) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.240 > D (1100) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.248 > D (1110) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.254 > D (1120) nvs: nvs_open_from_partition nvs.net80211 1␛[0m
+11:11:13.259 > D (1120) nvs: nvs_get opmode 1␛[0m
+11:11:13.263 > D (1130) nvs: nvs_get_str_or_blob sta.ssid␛[0m
+11:11:13.267 > D (1130) nvs: nvs_get sta.authmode 1␛[0m
+11:11:13.270 > D (1130) nvs: nvs_get_str_or_blob sta.pswd␛[0m
+11:11:13.275 > D (1140) nvs: nvs_get_str_or_blob sta.pmk␛[0m
+11:11:13.280 > D (1140) nvs: nvs_get sta.chan 1␛[0m
+11:11:13.283 > D (1150) nvs: nvs_get auto.conn 1␛[0m
+11:11:13.286 > D (1150) nvs: nvs_get bssid.set 1␛[0m
+11:11:13.290 > D (1150) nvs: nvs_get_str_or_blob sta.bssid␛[0m
+11:11:13.294 > D (1160) nvs: nvs_get sta.lis_intval 2␛[0m
+11:11:13.297 > D (1160) nvs: nvs_get sta.phym 1␛[0m
+11:11:13.301 > D (1160) nvs: nvs_get sta.phybw 1␛[0m
+11:11:13.304 > D (1170) nvs: nvs_get_str_or_blob sta.apsw␛[0m
+11:11:13.309 > D (1170) nvs: nvs_get_str_or_blob sta.apinfo␛[0m
+11:11:13.313 > D (1180) nvs: nvs_get sta.scan_method 1␛[0m
+11:11:13.316 > D (1180) nvs: nvs_get sta.sort_method 1␛[0m
+11:11:13.321 > D (1180) nvs: nvs_get sta.minrssi 1␛[0m
+11:11:13.324 > D (1190) nvs: nvs_get sta.minauth 1␛[0m
+11:11:13.327 > D (1190) nvs: nvs_get sta.pmf_e 1␛[0m
+11:11:13.331 > D (1190) nvs: nvs_get sta.pmf_r 1␛[0m
+11:11:13.334 > D (1200) nvs: nvs_get sta.btm_e 1␛[0m
+11:11:13.337 > D (1200) nvs: nvs_get sta.rrm_e 1␛[0m
+11:11:13.340 > D (1200) nvs: nvs_get sta.mbo_e 1␛[0m
+11:11:13.344 > D (1210) nvs: nvs_get_str_or_blob ap.ssid␛[0m
+11:11:13.348 > D (1210) nvs: nvs_get_str_or_blob ap.passwd␛[0m
+11:11:13.352 > D (1220) nvs: nvs_get_str_or_blob ap.pmk␛[0m
+11:11:13.357 > D (1220) nvs: nvs_get ap.chan 1␛[0m
+11:11:13.360 > D (1220) nvs: nvs_get ap.authmode 1␛[0m
+11:11:13.363 > D (1230) nvs: nvs_get ap.hidden 1␛[0m
+11:11:13.367 > D (1230) nvs: nvs_get ap.max.conn 1␛[0m
+11:11:13.370 > D (1230) nvs: nvs_get bcn.interval 2␛[0m
+11:11:13.374 > D (1240) nvs: nvs_get ap.phym 1␛[0m
+11:11:13.377 > D (1240) nvs: nvs_get ap.phybw 1␛[0m
+11:11:13.380 > D (1240) nvs: nvs_get ap.sndchan 1␛[0m
+11:11:13.384 > D (1250) nvs: nvs_get ap.pmf_e 1␛[0m
+11:11:13.388 > D (1250) nvs: nvs_get ap.pmf_r 1␛[0m
+11:11:13.390 > D (1250) nvs: nvs_get ap.p_cipher 1␛[0m
+11:11:13.394 > D (1260) nvs: nvs_get lorate 1␛[0m
+11:11:13.397 > D (1260) nvs: nvs_get_str_or_blob country␛[0m
+11:11:13.401 > D (1260) nvs: nvs_get ap.ftm_r 1␛[0m
+11:11:13.404 > D (1270) nvs: nvs_set ap.sndchan 1 1␛[0m
+11:11:13.408 > I (1270) wifi:wifi firmware version: 63017e0
+11:11:13.412 > I (1270) wifi:wifi certification version: v7.0
+11:11:13.417 > I (1280) wifi:config NVS flash: enabled
+11:11:13.421 > I (1280) wifi:config nano formating: disabled
+11:11:13.425 > I (1290) wifi:Init data frame dynamic rx buffer num: 32
+11:11:13.430 > I (1290) wifi:Init management frame dynamic rx buffer num: 32
+11:11:13.434 > I (1300) wifi:Init management short buffer num: 32
+11:11:13.439 > I (1300) wifi:Init dynamic tx buffer num: 32
+11:11:13.443 > I (1310) wifi:Init static rx buffer size: 1600
+11:11:13.447 > I (1310) wifi:Init static rx buffer num: 10
+11:11:13.451 > I (1310) wifi:Init dynamic rx buffer num: 32
+11:11:13.456 > ␛[0;32mI (1320) wifi_init: rx ba win: 6␛[0m
+11:11:13.459 > ␛[0;32mI (1320) wifi_init: tcpip mbox: 32␛[0m
+11:11:13.463 > ␛[0;32mI (1330) wifi_init: udp mbox: 6␛[0m
+11:11:13.466 > ␛[0;32mI (1330) wifi_init: tcp mbox: 6␛[0m
+11:11:13.470 > ␛[0;32mI (1330) wifi_init: tcp tx win: 5744␛[0m
+11:11:13.475 > ␛[0;32mI (1340) wifi_init: tcp rx win: 5744␛[0m
+11:11:13.479 > ␛[0;32mI (1340) wifi_init: tcp mss: 1440␛[0m
+11:11:13.484 > ␛[0;32mI (1350) wifi_init: WiFi IRAM OP enabled␛[0m
+11:11:13.487 > ␛[0;32mI (1350) wifi_init: WiFi RX IRAM OP enabled␛[0m
+11:11:13.493 > D (1360) nvs: nvs_get opmode 1␛[0m
+11:11:13.495 > ␛[0;32mI (1360) wifi_smartconfig: Flash SSID:WIRELESSNETWORK␛[0m
+11:11:13.501 > ␛[0;32mI (1360) wifi_smartconfig: Flash Password:123KREUZER_WIRELESS123␛[0m
+11:11:13.508 > D (1370) ADC: Wi-Fi takes adc2 lock.␛[0m
+11:11:13.511 > ␛[0;32mI (1370) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07␛[0m
+11:11:13.518 > D (1380) phy_init: loading PHY init data from application binary␛[0m
+11:11:13.524 > D (1390) nvs: nvs_open_from_partition phy 0␛[0m
+11:11:13.528 > D (1390) nvs: nvs_get cal_version 4␛[0m
+11:11:13.532 > D (1400) nvs: nvs_get_str_or_blob cal_mac␛[0m
+11:11:13.536 > D (1400) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.543 > D (1410) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.551 > D (1410) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit␛[0m
+11:11:13.558 > D (1420) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.565 > D (1430) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.572 > D (1430) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.579 > D (1440) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.586 > D (1450) nvs: nvs_get_str_or_blob cal_data␛[0m
+11:11:13.590 > D (1460) nvs: nvs_close 3␛[0m
+11:11:13.593 > D (1460) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.600 > D (1460) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.607 > D (1470) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit␛[0m
+11:11:13.614 > D (1480) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.622 > D (1480) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit␛[0m
+11:11:13.628 > D (1490) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit␛[0m
+11:11:13.636 > D (1500) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit␛[0m
+11:11:13.711 > D (1580) wifi:filter: set rx policy=0
+11:11:13.714 > I (1590) wifi:mode : sta (78:e3:6d:64:55:40)
+11:11:13.718 > I (1590) wifi:enable tsf
+11:11:13.720 > D (1590) wifi:filter: set rx policy=1
+11:11:13.724 > D (1590) wifi:connect status 0 -> 0
+11:11:13.728 > D (1590) event: running post WIFI_EVENT:2 with handler 0x400d5ac0 and context 0x3ffbe20c on loop 0x3ffbbd74␛[0m
+11:11:13.738 > D (1600) wifi_init_default: wifi_start esp-netif:0x3ffbdf94 event-id2␛[0m
+11:11:13.743 > D (1610) wifi_init_default: WIFI mac address: 78 e3 6d 64 55 40␛[0m
+11:11:13.750 > D (1610) esp_netif_handlers: esp_netif action has started with netif0x3ffbdf94 from event_id=2␛[0m
+11:11:13.758 > D (1620) esp_netif_lwip: check: remote, if=0x3ffbdf94 fn=0x400d3320
+11:11:13.764 > ␛[0m
+11:11:13.764 > ␛[0;32mI (1630) wifi_smartconfig: WIFI startet. Waiting for events.␛[0m
+11:11:13.771 > D (1630) esp_netif_lwip: esp_netif_start_api 0x3ffbdf94␛[0m
+11:11:13.776 > D (1640) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3ffbdf94␛[0m
+11:11:13.783 > D (1650) esp_netif_lwip: check: local, if=0x3ffbdf94 fn=0x400d3c4c
+11:11:13.789 > ␛[0m
+11:11:13.790 > D (1650) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffbdf94␛[0m
+11:11:13.795 > D (1660) esp_netif_lwip: call api in lwip: ret=0x0, give sem␛[0m
+11:11:13.801 > D (1660) event: running post WIFI_EVENT:2 with handler 0x400d2428 and context 0x3ffc5298 on loop 0x3ffbbd74␛[0m
+11:11:13.811 > ␛[0;32mI (1670) wifi_smartconfig: WIFI_EVENT_STA_START␛[0m
+11:11:13.816 > D (1680) wifi:Start wifi connect
+11:11:13.819 > D (1680) wifi:connect status 0 -> 0
+11:11:13.823 > D (1690) wifi:connect chan=0
+11:11:13.825 > D (1690) wifi:first chan=1
+11:11:13.827 > D (1690) wifi:connect status 0 -> 1
+11:11:13.832 > D (1690) wifi:filter: set rx policy=3
+11:11:13.834 > D (1700) wifi:clear scan ap list
+11:11:13.838 > D (1700) wifi:start scan: type=0x50f, priority=2, cb=0x4011b394, arg=0x0, ss_state=0x1, time=116773, index=0
+11:11:13.846 > D (1710) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+11:11:13.853 > D (1720) wifi:rsn valid: gcipher=3 ucipher=3 akm=9
+11:11:13.857 > 
+11:11:13.857 > D (1720) wifi:bssid equal: ss_state=0x7
+11:11:13.860 > D (1720) wifi:profile match: ss_state=0x7
+11:11:13.864 > D (1730) wifi:scan end: arg=0x0, status=0, ss_state=0x7
+11:11:13.869 > D (1730) wifi:find first mathched ssid, scan done
+11:11:13.874 > D (1740) wifi:filter: set rx policy=4
+11:11:13.878 > D (1740) wifi:first chan=1
+11:11:13.880 > D (1740) wifi:handoff_cb: status=0
+11:11:13.883 > D (1750) wifi:ap found, mac=e8:df:70:7b:f8:dc
+11:11:13.887 > D (1750) wifi:new_bss=0x3ffb6550, cur_bss=0x0, new_chan=<1,0>, cur_chan=1
+11:11:13.894 > D (1760) wifi:filter: set rx policy=5
+11:11:13.897 > I (1760) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+11:11:13.902 > D (1770) wifi:connect_op: status=0, auth=9, cipher=3 
+11:11:13.907 > D (1770) wifi:auth mode is not none
+11:11:13.910 > D (1770) wifi:connect_bss: auth=1, reconnect=0
+11:11:13.915 > I (1780) wifi:state: init -> auth (b0)
+11:11:14.606 > D (2480) wifi:start 1s AUTH timer
+11:11:14.609 > D (2480) wifi:clear scan ap list
+11:11:14.924 > D (2800) wifi:recv auth: seq=1, status=0
+11:11:15.258 > D (3130) wifi:recv auth: seq=2, status=0
+11:11:15.263 > I (3130) wifi:state: auth -> assoc (0)
+11:11:15.268 > D (3140) wifi:recv assoc: type=0x10
+11:11:15.272 > D (3140) wifi:filter: set rx policy=6
+11:11:15.275 > I (3140) wifi:state: assoc -> run (10)
+11:11:15.279 > D (3140) wifi:start 10s connect timer for 4 way handshake
+11:11:15.297 > I (3170) wifi:connected with WIRELESSNETWORK, aid = 7, channel 1, BW20, bssid = e8:df:70:7b:f8:dc
+11:11:15.306 > I (3170) wifi:security: WPA3-SAE, phy: bgn, rssi: -48
+11:11:15.310 > D (3170) wifi:remove all except e8:df:70:7b:f8:dc from rc list
+11:11:15.315 > D (3180) wifi:clear blacklist
+11:11:15.318 > D (3180) nvs: nvs_set sta.chan 1 1␛[0m
+11:11:15.322 > D (3180) nvs: nvs_set_blob sta.apinfo 700␛[0m
+11:11:15.326 > D (3190) wifi:filter: set rx policy=7
+11:11:15.330 > I (3190) wifi:pm start, type: 1
+11:11:15.333 > 
+11:11:15.333 > D (3190) wifi:Send sta connected event
+11:11:15.336 > D (3200) wifi:connect status 1 -> 5
+11:11:15.339 > D (3200) wifi:obss scan is disabled
+11:11:15.342 > D (3200) wifi:start obss scan: obss scan is stopped
+11:11:15.346 > D (3210) event: running post WIFI_EVENT:4 with handler 0x400d5af0 and context 0x3ffbe26c on loop 0x3ffbbd74␛[0m
+11:11:15.357 > I (3220) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+11:11:15.363 > D (3230) wifi:set max rate: from <rate=130, phy=3, sig=0> to <rate=144, phy=3 sig=0>
+11:11:15.370 > D (3230) wifi:sig_b=0, sig_g=0, sig_n=0, max_b=22, max_g=108, max_n=144
+11:11:15.376 > D (3240) wifi:update trc
+11:11:15.379 > D (3240) wifi:bssid equal: ss_state=0x4
+11:11:15.382 > D (3240) esp_netif_handlers: esp_netif action connected with netif0x3ffbdf94 from event_id=4␛[0m
+11:11:15.391 > D (3250) esp_netif_lwip: check: remote, if=0x3ffbdf94 fn=0x400d3508
+11:11:15.397 > ␛[0m
+11:11:15.397 > D (3260) esp_netif_lwip: esp_netif_up_api esp_netif:0x3ffbdf94␛[0m
+11:11:15.403 > D (3270) esp_netif_lwip: check: local, if=0x3ffbdf94 fn=0x400d3c4c
+11:11:15.409 > ␛[0m
+11:11:15.410 > D (3270) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffbdf94␛[0m
+11:11:15.415 > D (3280) esp_netif_lwip: call api in lwip: ret=0x0, give sem␛[0m
+11:11:15.421 > D (3280) esp_netif_lwip: check: remote, if=0x3ffbdf94 fn=0x400d3100
+11:11:15.427 > ␛[0m
+11:11:15.428 > D (3290) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3ffbdf94␛[0m
+11:11:15.434 > D (3300) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3ffbdf94␛[0m
+11:11:15.441 > D (3300) esp_netif_lwip: if0x3ffbdf94 start ip lost tmr: no need start because netif=0x3ffbe014 interval=120 ip=0␛[0m
+11:11:15.453 > D (3310) esp_netif_lwip: starting dhcp client␛[0m
+11:11:15.456 > D (3320) wifi:bssid equal: ss_state=0x4
+11:11:15.461 > D (3320) esp_netif_lwip: call api in lwip: ret=0x0, give sem␛[0m
+11:11:15.466 > D (3330) event: running post WIFI_EVENT:4 with handler 0x400d2428 and context 0x3ffc5298 on loop 0x3ffbbd74␛[0m
+11:11:15.475 > ␛[0;32mI (3340) wifi_smartconfig: WIFI_EVENT_STA_CONNECTED␛[0m
+11:11:15.548 > D (3420) wifi:bssid equal: ss_state=0x4
+11:11:15.649 > D (3520) wifi:bssid equal: ss_state=0x4
+11:11:15.752 > D (3630) wifi:bssid equal: ss_state=0x4
+11:11:15.854 > D (3730) wifi:bssid equal: ss_state=0x4
+11:11:15.956 > D (3830) wifi:bssid equal: ss_state=0x4
+11:11:16.059 > D (3930) wifi:bssid equal: ss_state=0x4
+11:11:16.124 > D (4000) esp_netif_lwip: esp_netif_dhcpc_cb lwip-netif:0x3ffbe014␛[0m
+11:11:16.130 > D (4000) esp_netif_lwip: if0x3ffbdf94 ip changed=1␛[0m
+11:11:16.136 > D (4000) event: running post IP_EVENT:0 with handler 0x400d5944 and context 0x3ffbe340 on loop 0x3ffbbd74␛[0m
+11:11:16.146 > D (4010) wifi_init_default: Got IP wifi default handler entered␛[0m
+11:11:16.152 > D (4010) esp_netif_handlers: esp_netif action got_ip with netif0x3ffbdf94 from event_id=0␛[0m
+11:11:16.160 > ␛[0;32mI (4020) esp_netif_handlers: sta ip: 192.168.0.31, mask: 255.255.255.0, gw: 192.168.0.1␛[0m
+11:11:16.169 > D (4030) event: running post IP_EVENT:0 with handler 0x400d2428 and context 0x3ffc52b8 on loop 0x3ffbbd74␛[0m
+11:11:16.178 > ␛[0;32mI (4040) wifi_smartconfig: IP_EVENT_STA_GOT_IP␛[0m
+11:11:16.183 > ␛[0;32mI (4050) wifi_smartconfig: got ip:192.168.0.31␛[0m
+11:11:16.188 > D (4040) wifi:bssid equal: ss_state=0x4
+11:11:16.191 > ␛[0;32mI (4050) wifi_smartconfig: Connected to ap SSID: WIRELESSNETWORK password: 123KREUZER_WIRELESS123␛[0m
+11:11:16.202 > ␛[0;32mI (4060) wifi_smartconfig: Init SNTP␛[0m
+11:11:16.206 > ␛[0;32mI (4070) wifi_smartconfig: Init timezone␛[0m
+11:11:16.210 > D (4070) nvs: nvs_open_from_partition WIFI 0␛[0m
+11:11:16.215 > D (4080) nvs: nvs_get_str_or_blob TZ␛[0m
+11:11:16.218 > D (4080) nvs: nvs_get_str_or_blob TZ␛[0m
+11:11:16.221 > D (4080) nvs: nvs_close 4␛[0m
+11:11:16.224 > ␛[0;32mI (4090) wifi_smartconfig: NVS value ␛[0m
+11:11:16.228 > ␛[0;32mI (4090) wifi_smartconfig: NVS size 1␛[0m
+11:11:16.264 > D (4140) wifi:bssid equal: ss_state=0x4
+11:11:16.367 > D (4240) wifi:bssid equal: ss_state=0x4
+11:11:16.469 > D (4340) wifi:bssid equal: ss_state=0x4
+11:11:16.571 > D (4440) wifi:bssid equal: ss_state=0x4
+11:11:16.675 > D (4550) wifi:bssid equal: ss_state=0x4
+11:11:16.776 > D (4650) wifi:bssid equal: ss_state=0x4
+11:11:16.878 > D (4750) wifi:bssid equal: ss_state=0x4
+11:11:16.980 > D (4850) wifi:bssid equal: ss_state=0x4
+11:11:17.083 > D (4960) wifi:bssid equal: ss_state=0x4
+11:11:17.186 > D (5060) wifi:bssid equal: ss_state=0x4
+11:11:17.288 > D (5160) wifi:bssid equal: ss_state=0x4
+11:11:17.390 > D (5260) wifi:bssid equal: ss_state=0x4
+11:11:17.492 > D (5370) wifi:bssid equal: ss_state=0x4
+11:11:17.595 > D (5470) wifi:bssid equal: ss_state=0x4
+11:11:17.697 > D (5570) wifi:bssid equal: ss_state=0x4
+11:11:17.799 > D (5670) wifi:bssid equal: ss_state=0x4
+11:11:17.902 > D (5780) wifi:bssid equal: ss_state=0x4
+11:11:18.004 > D (5880) wifi:bssid equal: ss_state=0x4
+11:11:18.106 > D (5980) wifi:bssid equal: ss_state=0x4
+11:11:18.211 > D (6080) wifi:bssid equal: ss_state=0x4
+11:11:18.312 > D (6190) wifi:bssid equal: ss_state=0x4
+11:11:18.414 > D (6290) wifi:bssid equal: ss_state=0x4
+11:11:18.517 > D (6390) wifi:bssid equal: ss_state=0x4
+11:11:18.619 > D (6490) wifi:bssid equal: ss_state=0x4
+11:11:18.721 > D (6600) wifi:bssid equal: ss_state=0x4
+11:11:18.823 > D (6700) wifi:bssid equal: ss_state=0x4
+11:11:18.927 > D (6800) wifi:bssid equal: ss_state=0x4
+11:11:18.931 > ␛[0;32mI (6800) wifi_smartconfig: Syncing date/time: Wed Jul 27 09:11:18 2022
+11:11:18.938 > ␛[0m
+11:11:19.028 > D (6900) wifi:bssid equal: ss_state=0x4
+11:11:19.131 > D (7000) wifi:bssid equal: ss_state=0x4
+11:11:19.233 > D (7110) wifi:bssid equal: ss_state=0x4
+11:11:19.335 > D (7210) wifi:bssid equal: ss_state=0x4
+11:11:19.439 > D (7310) wifi:bssid equal: ss_state=0x4
+11:11:19.541 > D (7410) wifi:bssid equal: ss_state=0x4
+11:11:19.643 > D (7520) wifi:bssid equal: ss_state=0x4
+11:11:19.745 > D (7620) wifi:bssid equal: ss_state=0x4
+11:11:19.847 > D (7720) wifi:bssid equal: ss_state=0x4
+11:11:19.950 > D (7820) wifi:bssid equal: ss_state=0x4
+11:11:20.053 > D (7930) wifi:bssid equal: ss_state=0x4
+11:11:20.155 > D (8030) wifi:bssid equal: ss_state=0x4
+11:11:20.257 > D (8130) wifi:bssid equal: ss_state=0x4
+11:11:20.360 > D (8230) wifi:bssid equal: ss_state=0x4
+11:11:20.462 > D (8340) wifi:bssid equal: ss_state=0x4
+11:11:20.564 > D (8440) wifi:bssid equal: ss_state=0x4
+11:11:20.667 > D (8540) wifi:bssid equal: ss_state=0x4
+11:11:20.770 > D (8640) wifi:bssid equal: ss_state=0x4
+11:11:20.873 > D (8750) wifi:bssid equal: ss_state=0x4
+11:11:20.974 > D (8850) wifi:bssid equal: ss_state=0x4
+11:11:21.077 > D (8950) wifi:bssid equal: ss_state=0x4
+11:11:21.178 > D (9050) wifi:bssid equal: ss_state=0x4
+11:11:21.281 > D (9160) wifi:bssid equal: ss_state=0x4
+11:11:21.384 > D (9260) wifi:bssid equal: ss_state=0x4
+11:11:21.487 > D (9360) wifi:bssid equal: ss_state=0x4
+11:11:21.589 > D (9460) wifi:bssid equal: ss_state=0x4
+11:11:21.691 > D (9570) wifi:bssid equal: ss_state=0x4
+11:11:21.794 > D (9670) wifi:bssid equal: ss_state=0x4
+11:11:21.896 > D (9770) wifi:bssid equal: ss_state=0x4
+11:11:21.999 > D (9870) wifi:bssid equal: ss_state=0x4
+11:11:22.100 > D (9970) wifi:bssid equal: ss_state=0x4
+11:11:22.203 > D (10080) wifi:bssid equal: ss_state=0x4
+11:11:22.306 > D (10180) wifi:bssid equal: ss_state=0x4
+11:11:22.407 > D (10280) wifi:bssid equal: ss_state=0x4
+11:11:22.510 > D (10380) wifi:bssid equal: ss_state=0x4
+11:11:22.612 > D (10490) wifi:bssid equal: ss_state=0x4
+11:11:22.715 > D (10590) wifi:bssid equal: ss_state=0x4
+11:11:22.817 > D (10690) wifi:bssid equal: ss_state=0x4
+11:11:22.919 > D (10790) wifi:bssid equal: ss_state=0x4
+11:11:23.022 > D (10900) wifi:bssid equal: ss_state=0x4
+11:11:23.125 > D (11000) wifi:bssid equal: ss_state=0x4
+11:11:23.227 > D (11100) wifi:bssid equal: ss_state=0x4
+11:11:23.329 > D (11200) wifi:bssid equal: ss_state=0x4
+11:11:23.432 > D (11310) wifi:bssid equal: ss_state=0x4
+11:11:23.534 > D (11410) wifi:bssid equal: ss_state=0x4
+11:11:23.636 > D (11510) wifi:bssid equal: ss_state=0x4
+11:11:23.739 > D (11610) wifi:bssid equal: ss_state=0x4
+11:11:23.842 > D (11720) wifi:bssid equal: ss_state=0x4
+11:11:23.944 > D (11820) wifi:bssid equal: ss_state=0x4
+11:11:24.047 > D (11920) wifi:bssid equal: ss_state=0x4
+11:11:24.149 > D (12020) wifi:bssid equal: ss_state=0x4
+11:11:24.251 > D (12130) wifi:bssid equal: ss_state=0x4
+11:11:24.354 > D (12230) wifi:bssid equal: ss_state=0x4
+11:11:24.456 > D (12330) wifi:bssid equal: ss_state=0x4
+11:11:24.559 > D (12430) wifi:bssid equal: ss_state=0x4
+11:11:24.660 > D (12530) wifi:bssid equal: ss_state=0x4
+11:11:24.763 > D (12640) wifi:bssid equal: ss_state=0x4
+11:11:24.865 > D (12740) wifi:bssid equal: ss_state=0x4
+11:11:24.967 > D (12840) wifi:bssid equal: ss_state=0x4
+11:11:25.070 > D (12940) wifi:bssid equal: ss_state=0x4
+11:11:25.173 > D (13050) wifi:bssid equal: ss_state=0x4
+11:11:25.275 > D (13150) wifi:bssid equal: ss_state=0x4
+11:11:25.378 > D (13250) wifi:bssid equal: ss_state=0x4
+11:11:25.479 > D (13350) wifi:bssid equal: ss_state=0x4
+11:11:25.582 > D (13460) wifi:bssid equal: ss_state=0x4
+11:11:25.685 > D (13560) wifi:bssid equal: ss_state=0x4
+11:11:25.786 > D (13660) wifi:bssid equal: ss_state=0x4
+11:11:25.889 > D (13760) wifi:bssid equal: ss_state=0x4
+11:11:25.991 > D (13870) wifi:bssid equal: ss_state=0x4
+11:11:26.094 > D (13970) wifi:bssid equal: ss_state=0x4
+11:11:26.197 > D (14070) wifi:bssid equal: ss_state=0x4
+11:11:26.299 > D (14170) wifi:bssid equal: ss_state=0x4
+11:11:26.401 > D (14280) wifi:bssid equal: ss_state=0x4
+11:11:26.504 > D (14380) wifi:bssid equal: ss_state=0x4
+11:11:26.606 > D (14480) wifi:bssid equal: ss_state=0x4
+11:11:26.708 > D (14580) wifi:bssid equal: ss_state=0x4
+11:11:26.811 > D (14690) wifi:bssid equal: ss_state=0x4
+11:11:26.913 > D (14790) wifi:bssid equal: ss_state=0x4
+11:11:27.017 > D (14890) wifi:bssid equal: ss_state=0x4
+11:11:27.119 > D (14990) wifi:bssid equal: ss_state=0x4
+11:11:27.220 > D (15090) wifi:bssid equal: ss_state=0x4
+11:11:27.323 > D (15200) wifi:bssid equal: ss_state=0x4
+11:11:27.426 > D (15300) wifi:bssid equal: ss_state=0x4
+11:11:27.528 > D (15400) wifi:bssid equal: ss_state=0x4
+11:11:27.630 > D (15500) wifi:bssid equal: ss_state=0x4
+11:11:27.734 > D (15610) wifi:bssid equal: ss_state=0x4
+11:11:27.836 > D (15710) wifi:bssid equal: ss_state=0x4
+11:11:27.938 > D (15810) wifi:bssid equal: ss_state=0x4
+11:11:28.040 > D (15910) wifi:bssid equal: ss_state=0x4
+11:11:28.143 > D (16020) wifi:bssid equal: ss_state=0x4
+11:11:28.245 > D (16120) wifi:bssid equal: ss_state=0x4
+11:11:28.347 > D (16220) wifi:bssid equal: ss_state=0x4
+11:11:28.450 > D (16320) wifi:bssid equal: ss_state=0x4
+11:11:28.552 > D (16430) wifi:bssid equal: ss_state=0x4
+11:11:28.655 > D (16530) wifi:bssid equal: ss_state=0x4
+11:11:28.756 > D (16630) wifi:bssid equal: ss_state=0x4
+11:11:28.860 > D (16730) wifi:bssid equal: ss_state=0x4
+11:11:28.962 > D (16840) wifi:bssid equal: ss_state=0x4
+11:11:29.063 > D (16940) wifi:bssid equal: ss_state=0x4
+11:11:29.166 > D (17040) wifi:bssid equal: ss_state=0x4
+11:11:29.269 > D (17140) wifi:bssid equal: ss_state=0x4
+11:11:29.372 > D (17250) wifi:bssid equal: ss_state=0x4
+11:11:29.473 > D (17350) wifi:bssid equal: ss_state=0x4
+11:11:29.572 > D (17450) wifi:bssid equal: ss_state=0x4
+11:11:29.678 > D (17550) wifi:bssid equal: ss_state=0x4
+11:11:29.780 > D (17650) wifi:bssid equal: ss_state=0x4
+11:11:29.882 > D (17760) wifi:bssid equal: ss_state=0x4
+11:11:29.985 > D (17860) wifi:bssid equal: ss_state=0x4
+11:11:30.088 > D (17960) wifi:bssid equal: ss_state=0x4
+11:11:30.190 > D (18060) wifi:bssid equal: ss_state=0x4
+11:11:30.293 > D (18170) wifi:bssid equal: ss_state=0x4
+11:11:30.394 > D (18270) wifi:bssid equal: ss_state=0x4
+11:11:30.497 > D (18370) wifi:bssid equal: ss_state=0x4
+11:11:30.600 > D (18470) wifi:bssid equal: ss_state=0x4
+11:11:30.702 > D (18580) wifi:bssid equal: ss_state=0x4
+11:11:30.804 > D (18680) wifi:bssid equal: ss_state=0x4
+11:11:30.907 > D (18780) wifi:bssid equal: ss_state=0x4
+11:11:31.009 > D (18880) wifi:bssid equal: ss_state=0x4
+11:11:31.111 > D (18990) wifi:bssid equal: ss_state=0x4
+11:11:31.214 > D (19090) wifi:bssid equal: ss_state=0x4
+11:11:31.316 > D (19190) wifi:bssid equal: ss_state=0x4
+11:11:31.418 > D (19290) wifi:bssid equal: ss_state=0x4
+11:11:31.522 > D (19400) wifi:bssid equal: ss_state=0x4
+11:11:31.624 > D (19500) wifi:bssid equal: ss_state=0x4
+11:11:31.726 > D (19600) wifi:bssid equal: ss_state=0x4
+11:11:31.828 > D (19700) wifi:bssid equal: ss_state=0x4
+11:11:31.931 > D (19810) wifi:bssid equal: ss_state=0x4
+11:11:32.033 > D (19910) wifi:bssid equal: ss_state=0x4
+11:11:32.136 > D (20010) wifi:bssid equal: ss_state=0x4
+11:11:32.238 > D (20110) wifi:bssid equal: ss_state=0x4
+11:11:32.341 > D (20220) wifi:bssid equal: ss_state=0x4
+11:11:32.442 > D (20320) wifi:bssid equal: ss_state=0x4
+11:11:32.545 > D (20420) wifi:bssid equal: ss_state=0x4
+11:11:32.648 > D (20520) wifi:bssid equal: ss_state=0x4
+11:11:32.750 > D (20620) wifi:bssid equal: ss_state=0x4
+11:11:32.853 > D (20730) wifi:bssid equal: ss_state=0x4
+11:11:32.954 > D (20830) wifi:bssid equal: ss_state=0x4
+11:11:33.057 > D (20930) wifi:bssid equal: ss_state=0x4
+11:11:33.160 > D (21030) wifi:bssid equal: ss_state=0x4
+11:11:33.262 > D (21140) wifi:bssid equal: ss_state=0x4
+11:11:33.365 > D (21240) wifi:bssid equal: ss_state=0x4
+11:11:33.466 > D (21340) wifi:bssid equal: ss_state=0x4
+11:11:33.569 > D (21440) wifi:bssid equal: ss_state=0x4
+11:11:33.672 > D (21550) wifi:bssid equal: ss_state=0x4
+11:11:33.774 > D (21650) wifi:bssid equal: ss_state=0x4
+11:11:33.876 > D (21750) wifi:bssid equal: ss_state=0x4
+11:11:33.979 > D (21850) wifi:bssid equal: ss_state=0x4
+11:11:34.081 > D (21960) wifi:bssid equal: ss_state=0x4
+11:11:34.184 > D (22060) wifi:bssid equal: ss_state=0x4
+11:11:34.286 > D (22160) wifi:bssid equal: ss_state=0x4
+11:11:34.389 > D (22260) wifi:bssid equal: ss_state=0x4
+11:11:34.490 > D (22370) wifi:bssid equal: ss_state=0x4
+11:11:34.593 > D (22470) wifi:bssid equal: ss_state=0x4
+11:11:34.695 > D (22570) wifi:bssid equal: ss_state=0x4
+11:11:34.798 > D (22670) wifi:bssid equal: ss_state=0x4
+11:11:34.901 > D (22780) wifi:bssid equal: ss_state=0x4
+11:11:35.003 > D (22880) wifi:bssid equal: ss_state=0x4
+11:11:35.106 > D (22980) wifi:bssid equal: ss_state=0x4
+11:11:35.208 > D (23080) wifi:bssid equal: ss_state=0x4
+11:11:35.310 > D (23180) wifi:bssid equal: ss_state=0x4
+11:11:35.413 > D (23290) wifi:bssid equal: ss_state=0x4
+11:11:35.515 > D (23390) wifi:bssid equal: ss_state=0x4
+11:11:35.617 > D (23490) wifi:bssid equal: ss_state=0x4
+11:11:35.720 > D (23590) wifi:bssid equal: ss_state=0x4
+11:11:35.822 > D (23700) wifi:bssid equal: ss_state=0x4
+11:11:35.925 > D (23800) wifi:bssid equal: ss_state=0x4
+11:11:36.027 > D (23900) wifi:bssid equal: ss_state=0x4
+11:11:36.130 > D (24000) wifi:bssid equal: ss_state=0x4
+11:11:36.232 > D (24110) wifi:bssid equal: ss_state=0x4
+11:11:36.334 > D (24210) wifi:bssid equal: ss_state=0x4
+11:11:36.436 > D (24310) wifi:bssid equal: ss_state=0x4
+11:11:36.539 > D (24410) wifi:bssid equal: ss_state=0x4
+11:11:36.641 > D (24520) wifi:bssid equal: ss_state=0x4
+11:11:36.744 > D (24620) wifi:bssid equal: ss_state=0x4
+11:11:36.846 > D (24720) wifi:bssid equal: ss_state=0x4
+11:11:36.948 > D (24820) wifi:bssid equal: ss_state=0x4
+11:11:37.051 > D (24930) wifi:bssid equal: ss_state=0x4
+11:11:37.153 > D (25030) wifi:bssid equal: ss_state=0x4
+11:11:37.256 > D (25130) wifi:bssid equal: ss_state=0x4
+11:11:37.358 > D (25230) wifi:bssid equal: ss_state=0x4
+11:11:37.460 > D (25340) wifi:bssid equal: ss_state=0x4
+11:11:37.563 > D (25440) wifi:bssid equal: ss_state=0x4
+11:11:37.665 > D (25540) wifi:bssid equal: ss_state=0x4
+11:11:37.768 > D (25640) wifi:bssid equal: ss_state=0x4
+11:11:37.870 > D (25740) wifi:bssid equal: ss_state=0x4
+11:11:37.974 > D (25850) wifi:bssid equal: ss_state=0x4
+11:11:38.075 > D (25950) wifi:bssid equal: ss_state=0x4
+11:11:38.177 > D (26050) wifi:bssid equal: ss_state=0x4
+11:11:38.280 > D (26150) wifi:bssid equal: ss_state=0x4
+11:11:38.382 > D (26260) wifi:bssid equal: ss_state=0x4
+11:11:38.484 > D (26360) wifi:bssid equal: ss_state=0x4
+11:11:38.586 > D (26460) wifi:bssid equal: ss_state=0x4
+11:11:38.689 > D (26560) wifi:bssid equal: ss_state=0x4
+11:11:38.792 > D (26670) wifi:bssid equal: ss_state=0x4
+11:11:38.894 > D (26770) wifi:bssid equal: ss_state=0x4
+11:11:38.996 > D (26870) wifi:bssid equal: ss_state=0x4
+11:11:39.098 > D (26970) wifi:bssid equal: ss_state=0x4
+11:11:39.201 > D (27080) wifi:bssid equal: ss_state=0x4
+11:11:39.304 > D (27180) wifi:bssid equal: ss_state=0x4
+11:11:39.406 > D (27280) wifi:bssid equal: ss_state=0x4
+11:11:39.508 > D (27380) wifi:bssid equal: ss_state=0x4
+11:11:39.610 > D (27490) wifi:bssid equal: ss_state=0x4
+11:11:39.713 > D (27590) wifi:bssid equal: ss_state=0x4
+11:11:39.815 > D (27690) wifi:bssid equal: ss_state=0x4
+11:11:39.918 > D (27790) wifi:bssid equal: ss_state=0x4
+11:11:40.021 > D (27900) wifi:bssid equal: ss_state=0x4
+11:11:40.122 > D (28000) wifi:bssid equal: ss_state=0x4
+11:11:40.226 > D (28100) wifi:bssid equal: ss_state=0x4
+11:11:40.327 > D (28200) wifi:bssid equal: ss_state=0x4
+11:11:40.431 > D (28300) wifi:bssid equal: ss_state=0x4
+11:11:40.532 > D (28410) wifi:bssid equal: ss_state=0x4
+11:11:40.635 > D (28510) wifi:bssid equal: ss_state=0x4
+11:11:40.839 > D (28710) wifi:bssid equal: ss_state=0x4
+11:11:40.942 > D (28820) wifi:bssid equal: ss_state=0x4
+11:11:41.045 > D (28920) wifi:bssid equal: ss_state=0x4
+11:11:41.147 > D (29020) wifi:bssid equal: ss_state=0x4
+11:11:41.249 > D (29120) wifi:bssid equal: ss_state=0x4
+11:11:41.351 > D (29230) wifi:bssid equal: ss_state=0x4
+11:11:41.454 > D (29330) wifi:bssid equal: ss_state=0x4
+11:11:41.557 > D (29430) wifi:bssid equal: ss_state=0x4
+11:11:41.659 > D (29530) wifi:bssid equal: ss_state=0x4
+11:11:41.761 > D (29640) wifi:bssid equal: ss_state=0x4
+11:11:41.863 > D (29740) wifi:bssid equal: ss_state=0x4
+11:11:41.966 > D (29840) wifi:bssid equal: ss_state=0x4
+11:11:42.068 > D (29940) wifi:bssid equal: ss_state=0x4
+11:11:42.170 > D (30050) wifi:bssid equal: ss_state=0x4
+11:11:42.274 > D (30150) wifi:bssid equal: ss_state=0x4
+11:11:42.375 > D (30250) wifi:bssid equal: ss_state=0x4
+11:11:42.479 > D (30350) wifi:bssid equal: ss_state=0x4
+11:11:42.580 > D (30460) wifi:bssid equal: ss_state=0x4
+11:11:42.683 > D (30560) wifi:bssid equal: ss_state=0x4
+11:11:42.785 > D (30660) wifi:bssid equal: ss_state=0x4
+11:11:42.887 > D (30760) wifi:bssid equal: ss_state=0x4
+11:11:42.990 > D (30870) wifi:bssid equal: ss_state=0x4
+11:11:43.093 > D (30970) wifi:bssid equal: ss_state=0x4
+11:11:43.195 > D (31070) wifi:bssid equal: ss_state=0x4
+11:11:43.298 > D (31170) wifi:bssid equal: ss_state=0x4
+11:11:43.400 > D (31270) wifi:bssid equal: ss_state=0x4
+11:11:43.502 > D (31380) wifi:bssid equal: ss_state=0x4
+11:11:43.605 > D (31480) wifi:bssid equal: ss_state=0x4
+11:11:43.707 > D (31580) wifi:bssid equal: ss_state=0x4
+11:11:43.809 > D (31680) wifi:bssid equal: ss_state=0x4
+11:11:43.912 > D (31790) wifi:bssid equal: ss_state=0x4
+11:11:44.014 > D (31890) wifi:bssid equal: ss_state=0x4
+11:11:44.117 > D (31990) wifi:bssid equal: ss_state=0x4
+11:11:44.219 > D (32090) wifi:bssid equal: ss_state=0x4
+11:11:44.322 > D (32200) wifi:bssid equal: ss_state=0x4
+11:11:44.424 > D (32300) wifi:bssid equal: ss_state=0x4
+11:11:44.526 > D (32400) wifi:bssid equal: ss_state=0x4
+11:11:44.628 > D (32500) wifi:bssid equal: ss_state=0x4
+11:11:44.731 > D (32610) wifi:bssid equal: ss_state=0x4
+11:11:44.833 > D (32710) wifi:bssid equal: ss_state=0x4
+11:11:44.936 > D (32810) wifi:bssid equal: ss_state=0x4
+11:11:45.038 > D (32910) wifi:bssid equal: ss_state=0x4
+11:11:45.141 > D (33020) wifi:bssid equal: ss_state=0x4
+11:11:45.243 > D (33120) wifi:bssid equal: ss_state=0x4
+11:11:45.345 > D (33220) wifi:bssid equal: ss_state=0x4
+11:11:45.448 > D (33320) wifi:bssid equal: ss_state=0x4
+11:11:45.550 > D (33430) wifi:bssid equal: ss_state=0x4
+11:11:45.652 > D (33530) wifi:bssid equal: ss_state=0x4
+11:11:45.755 > D (33630) wifi:bssid equal: ss_state=0x4
+11:11:45.857 > D (33730) wifi:bssid equal: ss_state=0x4
+11:11:45.959 > D (33830) wifi:bssid equal: ss_state=0x4
+11:11:46.061 > D (33940) wifi:bssid equal: ss_state=0x4
+11:11:46.164 > D (34040) wifi:bssid equal: ss_state=0x4
+11:11:46.267 > D (34140) wifi:bssid equal: ss_state=0x4
+11:11:46.369 > D (34240) wifi:bssid equal: ss_state=0x4
+11:11:46.471 > D (34350) wifi:bssid equal: ss_state=0x4
+11:11:46.574 > D (34450) wifi:bssid equal: ss_state=0x4
+11:11:46.677 > D (34550) wifi:bssid equal: ss_state=0x4
+11:11:46.779 > D (34650) wifi:bssid equal: ss_state=0x4
+11:11:46.881 > D (34760) wifi:bssid equal: ss_state=0x4
+11:11:46.983 > D (34860) wifi:bssid equal: ss_state=0x4
+11:11:47.086 > D (34960) wifi:bssid equal: ss_state=0x4
+11:11:47.188 > D (35060) wifi:bssid equal: ss_state=0x4
+11:11:47.291 > D (35170) wifi:bssid equal: ss_state=0x4
+11:11:47.393 > D (35270) wifi:bssid equal: ss_state=0x4
+11:11:47.495 > D (35370) wifi:bssid equal: ss_state=0x4
+11:11:47.598 > D (35470) wifi:bssid equal: ss_state=0x4
+11:11:47.701 > D (35580) wifi:bssid equal: ss_state=0x4
+11:11:47.803 > D (35680) wifi:bssid equal: ss_state=0x4
+11:11:47.905 > D (35780) wifi:bssid equal: ss_state=0x4
+11:11:48.007 > D (35880) wifi:bssid equal: ss_state=0x4
+11:11:48.110 > D (35990) wifi:bssid equal: ss_state=0x4
+11:11:48.212 > D (36090) wifi:bssid equal: ss_state=0x4
+11:11:48.315 > D (36190) wifi:bssid equal: ss_state=0x4
+11:11:48.418 > D (36290) wifi:bssid equal: ss_state=0x4
+11:11:48.520 > D (36390) wifi:bssid equal: ss_state=0x4
+11:11:48.622 > D (36500) wifi:bssid equal: ss_state=0x4
+11:11:48.725 > D (36600) wifi:bssid equal: ss_state=0x4
+11:11:48.827 > D (36700) wifi:bssid equal: ss_state=0x4
+11:11:48.929 > D (36800) wifi:bssid equal: ss_state=0x4
+11:11:49.032 > D (36910) wifi:bssid equal: ss_state=0x4
+11:11:49.134 > D (37010) wifi:bssid equal: ss_state=0x4
+11:11:49.237 > D (37110) wifi:bssid equal: ss_state=0x4
+11:11:49.339 > D (37210) wifi:bssid equal: ss_state=0x4
+11:11:49.441 > D (37320) wifi:bssid equal: ss_state=0x4
+11:11:49.543 > D (37420) wifi:bssid equal: ss_state=0x4
+11:11:49.646 > D (37520) wifi:bssid equal: ss_state=0x4
+11:11:49.748 > D (37620) wifi:bssid equal: ss_state=0x4
+11:11:49.851 > D (37730) wifi:bssid equal: ss_state=0x4
+11:11:49.953 > D (37830) wifi:bssid equal: ss_state=0x4
+11:11:50.055 > D (37930) wifi:bssid equal: ss_state=0x4
+11:11:50.158 > D (38030) wifi:bssid equal: ss_state=0x4
+11:11:50.261 > D (38140) wifi:bssid equal: ss_state=0x4
+11:11:50.363 > D (38240) wifi:bssid equal: ss_state=0x4
+11:11:50.466 > D (38340) wifi:bssid equal: ss_state=0x4
+11:11:50.568 > D (38440) wifi:bssid equal: ss_state=0x4
+11:11:50.670 > D (38550) wifi:bssid equal: ss_state=0x4
+11:11:50.773 > D (38650) wifi:bssid equal: ss_state=0x4
+11:11:50.875 > D (38750) wifi:bssid equal: ss_state=0x4
+11:11:50.977 > D (38850) wifi:bssid equal: ss_state=0x4
+11:11:51.079 > D (38950) wifi:bssid equal: ss_state=0x4
+11:11:51.182 > D (39060) wifi:bssid equal: ss_state=0x4
+11:11:51.284 > D (39160) wifi:bssid equal: ss_state=0x4
+11:11:51.386 > D (39260) wifi:bssid equal: ss_state=0x4
+11:11:51.490 > D (39360) wifi:bssid equal: ss_state=0x4
+11:11:51.591 > D (39470) wifi:bssid equal: ss_state=0x4
+11:11:51.694 > D (39570) wifi:bssid equal: ss_state=0x4
+11:11:51.899 > D (39770) wifi:bssid equal: ss_state=0x4
+11:11:52.001 > D (39880) wifi:bssid equal: ss_state=0x4
+11:11:52.103 > D (39980) wifi:bssid equal: ss_state=0x4
+11:11:52.206 > D (40080) wifi:bssid equal: ss_state=0x4
+11:11:52.308 > D (40180) wifi:bssid equal: ss_state=0x4
+11:11:52.411 > D (40290) wifi:bssid equal: ss_state=0x4
+11:11:52.513 > D (40390) wifi:bssid equal: ss_state=0x4
+11:11:52.615 > D (40490) wifi:bssid equal: ss_state=0x4
+11:11:52.718 > D (40590) wifi:bssid equal: ss_state=0x4
+11:11:52.820 > D (40700) wifi:bssid equal: ss_state=0x4
+11:11:52.923 > D (40800) wifi:bssid equal: ss_state=0x4
+11:11:53.026 > D (40900) wifi:bssid equal: ss_state=0x4
+11:11:53.128 > D (41000) wifi:bssid equal: ss_state=0x4
+11:11:53.230 > D (41110) wifi:bssid equal: ss_state=0x4
+11:11:53.435 > D (41310) wifi:bssid equal: ss_state=0x4
+11:11:53.537 > D (41410) wifi:bssid equal: ss_state=0x4
+11:11:53.639 > D (41520) wifi:bssid equal: ss_state=0x4
+11:11:53.742 > D (41620) wifi:bssid equal: ss_state=0x4
+11:11:53.844 > D (41720) wifi:bssid equal: ss_state=0x4
+11:11:53.947 > D (41820) wifi:bssid equal: ss_state=0x4
+11:11:54.049 > D (41920) wifi:bssid equal: ss_state=0x4
+11:11:54.152 > D (42030) wifi:bssid equal: ss_state=0x4
+11:11:54.254 > D (42130) wifi:bssid equal: ss_state=0x4
+11:11:54.357 > D (42230) wifi:bssid equal: ss_state=0x4
+11:11:54.459 > D (42330) wifi:bssid equal: ss_state=0x4
+11:11:54.562 > D (42440) wifi:bssid equal: ss_state=0x4
+11:11:54.664 > D (42540) wifi:bssid equal: ss_state=0x4
+11:11:54.766 > D (42640) wifi:bssid equal: ss_state=0x4
+11:11:54.868 > D (42740) wifi:bssid equal: ss_state=0x4
+11:11:54.971 > D (42850) wifi:bssid equal: ss_state=0x4
+11:11:55.074 > D (42950) wifi:bssid equal: ss_state=0x4
+11:11:55.176 > D (43050) wifi:bssid equal: ss_state=0x4
+11:11:55.278 > D (43150) wifi:bssid equal: ss_state=0x4
+11:11:55.381 > D (43260) wifi:bssid equal: ss_state=0x4
+11:11:55.483 > D (43360) wifi:bssid equal: ss_state=0x4
+11:11:55.585 > D (43460) wifi:bssid equal: ss_state=0x4
+11:11:55.688 > D (43560) wifi:bssid equal: ss_state=0x4
+11:11:55.790 > D (43670) wifi:bssid equal: ss_state=0x4
+11:11:55.892 > D (43770) wifi:bssid equal: ss_state=0x4
+11:11:55.995 > D (43870) wifi:bssid equal: ss_state=0x4
+11:11:56.097 > D (43970) wifi:bssid equal: ss_state=0x4
+11:11:56.200 > D (44080) wifi:bssid equal: ss_state=0x4
+11:11:56.303 > D (44180) wifi:bssid equal: ss_state=0x4
+11:11:56.507 > D (44380) wifi:bssid equal: ss_state=0x4
+11:11:56.610 > D (44480) wifi:bssid equal: ss_state=0x4
+11:11:56.712 > D (44590) wifi:bssid equal: ss_state=0x4
+11:11:56.814 > D (44690) wifi:bssid equal: ss_state=0x4
+11:11:56.917 > D (44790) wifi:bssid equal: ss_state=0x4
+11:11:57.019 > D (44890) wifi:bssid equal: ss_state=0x4
+11:11:57.122 > D (45000) wifi:bssid equal: ss_state=0x4
+11:11:57.224 > D (45100) wifi:bssid equal: ss_state=0x4
+11:11:57.326 > D (45200) wifi:bssid equal: ss_state=0x4
+11:11:57.428 > D (45300) wifi:bssid equal: ss_state=0x4
+11:11:57.530 > D (45410) wifi:bssid equal: ss_state=0x4
+11:11:57.633 > D (45510) wifi:bssid equal: ss_state=0x4
+11:11:57.736 > D (45610) wifi:bssid equal: ss_state=0x4
+11:11:57.839 > D (45710) wifi:bssid equal: ss_state=0x4
+11:11:57.941 > D (45820) wifi:bssid equal: ss_state=0x4
+11:11:58.043 > D (45920) wifi:bssid equal: ss_state=0x4
+11:11:58.146 > D (46020) wifi:bssid equal: ss_state=0x4
+11:11:58.248 > D (46120) wifi:bssid equal: ss_state=0x4
+11:11:58.350 > D (46230) wifi:bssid equal: ss_state=0x4
+11:11:58.453 > D (46330) wifi:bssid equal: ss_state=0x4
+11:11:58.555 > D (46430) wifi:bssid equal: ss_state=0x4
+11:11:58.657 > D (46530) wifi:bssid equal: ss_state=0x4
+11:11:58.759 > D (46640) wifi:bssid equal: ss_state=0x4
+11:11:58.862 > D (46740) wifi:bssid equal: ss_state=0x4
+11:11:58.965 > D (46840) wifi:bssid equal: ss_state=0x4
+11:11:59.067 > D (46940) wifi:bssid equal: ss_state=0x4
+11:11:59.170 > D (47040) wifi:bssid equal: ss_state=0x4
+11:11:59.272 > D (47150) wifi:bssid equal: ss_state=0x4
+11:11:59.374 > D (47250) wifi:bssid equal: ss_state=0x4
+11:11:59.477 > D (47350) wifi:bssid equal: ss_state=0x4
+11:11:59.579 > D (47450) wifi:bssid equal: ss_state=0x4
+11:11:59.682 > D (47560) wifi:bssid equal: ss_state=0x4
+11:11:59.784 > D (47660) wifi:bssid equal: ss_state=0x4
+11:11:59.886 > D (47760) wifi:bssid equal: ss_state=0x4
+11:11:59.989 > D (47860) wifi:bssid equal: ss_state=0x4
+11:12:00.090 > D (47970) wifi:bssid equal: ss_state=0x4
+11:12:00.194 > D (48070) wifi:bssid equal: ss_state=0x4
+11:12:00.295 > D (48170) wifi:bssid equal: ss_state=0x4
+11:12:00.398 > D (48270) wifi:bssid equal: ss_state=0x4
+11:12:00.501 > D (48380) wifi:bssid equal: ss_state=0x4
+11:12:00.603 > D (48480) wifi:bssid equal: ss_state=0x4
+11:12:00.705 > D (48580) wifi:bssid equal: ss_state=0x4
+11:12:00.807 > D (48680) wifi:bssid equal: ss_state=0x4
+11:12:00.910 > D (48790) wifi:bssid equal: ss_state=0x4
+11:12:01.012 > D (48890) wifi:bssid equal: ss_state=0x4
+11:12:01.115 > D (48990) wifi:bssid equal: ss_state=0x4
+11:12:01.218 > D (49090) wifi:bssid equal: ss_state=0x4
+11:12:01.320 > D (49200) wifi:bssid equal: ss_state=0x4
+11:12:01.422 > D (49300) wifi:bssid equal: ss_state=0x4
+11:12:01.524 > D (49400) wifi:bssid equal: ss_state=0x4
+11:12:01.627 > D (49500) wifi:bssid equal: ss_state=0x4
+11:12:01.729 > D (49600) wifi:bssid equal: ss_state=0x4
+11:12:01.834 > D (49710) wifi:bssid equal: ss_state=0x4
+11:12:01.934 > D (49810) wifi:bssid equal: ss_state=0x4
+11:12:02.036 > D (49910) wifi:bssid equal: ss_state=0x4
+11:12:02.139 > D (50010) wifi:bssid equal: ss_state=0x4
+11:12:02.241 > D (50120) wifi:bssid equal: ss_state=0x4
+11:12:02.344 > D (50220) wifi:bssid equal: ss_state=0x4
+11:12:02.446 > D (50320) wifi:bssid equal: ss_state=0x4
+11:12:02.548 > D (50420) wifi:bssid equal: ss_state=0x4
+11:12:02.651 > D (50530) wifi:bssid equal: ss_state=0x4
+11:12:02.753 > D (50630) wifi:bssid equal: ss_state=0x4
+11:12:02.856 > D (50730) wifi:bssid equal: ss_state=0x4
+11:12:02.959 > D (50830) wifi:bssid equal: ss_state=0x4
+11:12:03.061 > D (50940) wifi:bssid equal: ss_state=0x4
+11:12:03.163 > D (51040) wifi:bssid equal: ss_state=0x4
+11:12:03.266 > D (51140) wifi:bssid equal: ss_state=0x4
+11:12:03.368 > D (51240) wifi:bssid equal: ss_state=0x4
+11:12:03.470 > D (51350) wifi:bssid equal: ss_state=0x4
+11:12:03.573 > D (51450) wifi:bssid equal: ss_state=0x4
+11:12:03.675 > D (51550) wifi:bssid equal: ss_state=0x4
+11:12:03.778 > D (51650) wifi:bssid equal: ss_state=0x4
+11:12:03.879 > D (51760) wifi:bssid equal: ss_state=0x4
+11:12:03.980 > D (51860) wifi:bssid equal: ss_state=0x4
+11:12:04.085 > D (51960) wifi:bssid equal: ss_state=0x4
+11:12:04.188 > D (52060) wifi:bssid equal: ss_state=0x4
+11:12:04.290 > D (52170) wifi:bssid equal: ss_state=0x4
+11:12:04.392 > D (52270) wifi:bssid equal: ss_state=0x4
+11:12:04.495 > D (52370) wifi:bssid equal: ss_state=0x4
+11:12:04.597 > D (52470) wifi:bssid equal: ss_state=0x4
+11:12:04.699 > D (52570) wifi:bssid equal: ss_state=0x4
+11:12:04.802 > D (52680) wifi:bssid equal: ss_state=0x4
+11:12:04.904 > D (52780) wifi:bssid equal: ss_state=0x4
+11:12:05.006 > D (52880) wifi:bssid equal: ss_state=0x4
+11:12:05.108 > D (52980) wifi:bssid equal: ss_state=0x4
+11:12:05.211 > D (53090) wifi:bssid equal: ss_state=0x4
+11:12:05.314 > D (53190) wifi:bssid equal: ss_state=0x4
+11:12:05.416 > D (53290) wifi:bssid equal: ss_state=0x4
+11:12:05.518 > D (53390) wifi:bssid equal: ss_state=0x4
+11:12:05.621 > D (53500) wifi:bssid equal: ss_state=0x4
+11:12:05.723 > D (53600) wifi:bssid equal: ss_state=0x4
+11:12:05.826 > D (53700) wifi:bssid equal: ss_state=0x4
+11:12:05.928 > D (53800) wifi:bssid equal: ss_state=0x4
+11:12:06.030 > D (53910) wifi:bssid equal: ss_state=0x4
+11:12:06.132 > D (54010) wifi:bssid equal: ss_state=0x4
+11:12:06.235 > D (54110) wifi:bssid equal: ss_state=0x4
+11:12:06.338 > D (54210) wifi:bssid equal: ss_state=0x4
+11:12:06.440 > D (54320) wifi:bssid equal: ss_state=0x4
+11:12:06.542 > D (54420) wifi:bssid equal: ss_state=0x4
+11:12:06.644 > D (54520) wifi:bssid equal: ss_state=0x4
+11:12:06.747 > D (54620) wifi:bssid equal: ss_state=0x4
+11:12:06.850 > D (54730) wifi:bssid equal: ss_state=0x4
+11:12:06.952 > D (54830) wifi:bssid equal: ss_state=0x4
+11:12:07.054 > D (54930) wifi:bssid equal: ss_state=0x4
+11:12:07.157 > D (55030) wifi:bssid equal: ss_state=0x4
+11:12:07.259 > D (55130) wifi:bssid equal: ss_state=0x4
+11:12:07.361 > D (55240) wifi:bssid equal: ss_state=0x4
+11:12:07.464 > D (55340) wifi:bssid equal: ss_state=0x4
+11:12:07.566 > D (55440) wifi:bssid equal: ss_state=0x4
+11:12:07.668 > D (55540) wifi:bssid equal: ss_state=0x4
+11:12:07.771 > D (55650) wifi:bssid equal: ss_state=0x4
+11:12:07.873 > D (55750) wifi:bssid equal: ss_state=0x4
+11:12:07.976 > D (55850) wifi:bssid equal: ss_state=0x4
+11:12:08.078 > D (55950) wifi:bssid equal: ss_state=0x4
+11:12:08.181 > D (56060) wifi:bssid equal: ss_state=0x4
+11:12:08.283 > D (56160) wifi:bssid equal: ss_state=0x4
+11:12:08.385 > D (56260) wifi:bssid equal: ss_state=0x4
+11:12:08.488 > D (56360) wifi:bssid equal: ss_state=0x4
+11:12:08.591 > D (56470) wifi:bssid equal: ss_state=0x4
+11:12:08.693 > D (56570) wifi:bssid equal: ss_state=0x4
+11:12:08.795 > D (56670) wifi:bssid equal: ss_state=0x4
+11:12:08.898 > D (56770) wifi:bssid equal: ss_state=0x4
+11:12:09.000 > D (56880) wifi:bssid equal: ss_state=0x4
+11:12:09.102 > D (56980) wifi:bssid equal: ss_state=0x4
+11:12:09.205 > D (57080) wifi:bssid equal: ss_state=0x4
+11:12:09.307 > D (57180) wifi:bssid equal: ss_state=0x4
+11:12:09.410 > D (57290) wifi:bssid equal: ss_state=0x4
+11:12:09.512 > D (57390) wifi:bssid equal: ss_state=0x4
+11:12:09.614 > D (57490) wifi:bssid equal: ss_state=0x4
+11:12:09.717 > D (57590) wifi:bssid equal: ss_state=0x4
+11:12:09.819 > D (57690) wifi:bssid equal: ss_state=0x4
+11:12:09.922 > D (57800) wifi:bssid equal: ss_state=0x4
+11:12:10.023 > D (57900) wifi:bssid equal: ss_state=0x4
+11:12:10.126 > D (58000) wifi:bssid equal: ss_state=0x4
+11:12:10.229 > D (58100) wifi:bssid equal: ss_state=0x4
+11:12:10.331 > D (58210) wifi:bssid equal: ss_state=0x4
+11:12:10.433 > D (58310) wifi:bssid equal: ss_state=0x4
+11:12:10.536 > D (58410) wifi:bssid equal: ss_state=0x4
+11:12:10.639 > D (58510) wifi:bssid equal: ss_state=0x4
+11:12:10.741 > D (58620) wifi:bssid equal: ss_state=0x4
+11:12:10.843 > D (58720) wifi:bssid equal: ss_state=0x4
+11:12:10.946 > D (58820) wifi:bssid equal: ss_state=0x4
+11:12:11.048 > D (58920) wifi:bssid equal: ss_state=0x4
+11:12:11.150 > D (59030) wifi:bssid equal: ss_state=0x4
+11:12:11.252 > D (59130) wifi:bssid equal: ss_state=0x4
+11:12:11.355 > D (59230) wifi:bssid equal: ss_state=0x4
+11:12:11.458 > D (59330) wifi:bssid equal: ss_state=0x4
+11:12:11.560 > D (59440) wifi:bssid equal: ss_state=0x4
+11:12:11.662 > D (59540) wifi:bssid equal: ss_state=0x4
+11:12:11.765 > D (59640) wifi:bssid equal: ss_state=0x4
+11:12:11.867 > D (59740) wifi:bssid equal: ss_state=0x4
+11:12:11.969 > D (59850) wifi:bssid equal: ss_state=0x4
+11:12:12.078 > D (59950) wifi:bssid equal: ss_state=0x4
+11:12:12.175 > D (60050) wifi:bssid equal: ss_state=0x4
+11:12:12.277 > D (60150) wifi:bssid equal: ss_state=0x4
+11:12:12.379 > D (60260) wifi:bssid equal: ss_state=0x4
+11:12:12.481 > D (60360) wifi:bssid equal: ss_state=0x4
+11:12:12.584 > D (60460) wifi:bssid equal: ss_state=0x4
+11:12:12.686 > D (60560) wifi:bssid equal: ss_state=0x4
+11:12:12.788 > D (60660) wifi:bssid equal: ss_state=0x4
+11:12:12.891 > D (60770) wifi:bssid equal: ss_state=0x4
+11:12:12.993 > D (60870) wifi:bssid equal: ss_state=0x4
+11:12:13.096 > D (60970) wifi:bssid equal: ss_state=0x4
+11:12:13.199 > D (61070) wifi:bssid equal: ss_state=0x4
+11:12:13.301 > D (61180) wifi:bssid equal: ss_state=0x4
+11:12:13.403 > D (61280) wifi:bssid equal: ss_state=0x4
+11:12:13.505 > D (61380) wifi:bssid equal: ss_state=0x4
+11:12:13.608 > D (61480) wifi:bssid equal: ss_state=0x4
+11:12:13.710 > D (61590) wifi:bssid equal: ss_state=0x4
+11:12:13.813 > D (61690) wifi:bssid equal: ss_state=0x4
+11:12:13.915 > D (61790) wifi:bssid equal: ss_state=0x4
+11:12:14.017 > D (61890) wifi:bssid equal: ss_state=0x4
+11:12:14.120 > D (62000) wifi:bssid equal: ss_state=0x4
+11:12:14.222 > D (62100) wifi:bssid equal: ss_state=0x4
+11:12:14.325 > D (62200) wifi:bssid equal: ss_state=0x4
+11:12:14.427 > D (62300) wifi:bssid equal: ss_state=0x4
+11:12:14.530 > D (62410) wifi:bssid equal: ss_state=0x4
+11:12:14.632 > D (62510) wifi:bssid equal: ss_state=0x4
+11:12:14.734 > D (62610) wifi:bssid equal: ss_state=0x4
+11:12:14.837 > D (62710) wifi:bssid equal: ss_state=0x4
+11:12:14.939 > D (62820) wifi:bssid equal: ss_state=0x4
+11:12:15.042 > D (62920) wifi:bssid equal: ss_state=0x4
+11:12:15.143 > D (63020) wifi:bssid equal: ss_state=0x4
+11:12:15.246 > D (63120) wifi:bssid equal: ss_state=0x4
+11:12:15.349 > D (63220) wifi:bssid equal: ss_state=0x4
+11:12:15.451 > D (63330) wifi:bssid equal: ss_state=0x4
+11:12:15.553 > D (63430) wifi:bssid equal: ss_state=0x4
+11:12:15.656 > D (63530) wifi:bssid equal: ss_state=0x4
+11:12:15.758 > D (63630) wifi:bssid equal: ss_state=0x4
+11:12:15.861 > D (63740) wifi:bssid equal: ss_state=0x4
+11:12:15.963 > D (63840) wifi:bssid equal: ss_state=0x4
+11:12:16.066 > D (63940) wifi:bssid equal: ss_state=0x4
+11:12:16.168 > D (64040) wifi:bssid equal: ss_state=0x4
+11:12:16.270 > D (64150) wifi:bssid equal: ss_state=0x4
+11:12:16.373 > D (64250) wifi:bssid equal: ss_state=0x4
+11:12:16.475 > D (64350) wifi:bssid equal: ss_state=0x4
+11:12:16.578 > D (64450) wifi:bssid equal: ss_state=0x4
+11:12:16.680 > D (64560) wifi:bssid equal: ss_state=0x4
+11:12:16.782 > D (64660) wifi:bssid equal: ss_state=0x4
+11:12:16.886 > D (64760) wifi:bssid equal: ss_state=0x4
+11:12:16.987 > D (64860) wifi:bssid equal: ss_state=0x4
+11:12:17.090 > D (64970) wifi:bssid equal: ss_state=0x4
+11:12:17.192 > D (65070) wifi:bssid equal: ss_state=0x4
+11:12:17.295 > D (65170) wifi:bssid equal: ss_state=0x4
+11:12:17.398 > D (65270) wifi:bssid equal: ss_state=0x4
+11:12:17.500 > D (65380) wifi:bssid equal: ss_state=0x4
+11:12:17.601 > D (65480) wifi:bssid equal: ss_state=0x4
+11:12:17.705 > D (65580) wifi:bssid equal: ss_state=0x4
+11:12:17.807 > D (65680) wifi:bssid equal: ss_state=0x4
+11:12:17.908 > D (65780) wifi:bssid equal: ss_state=0x4
+11:12:18.011 > D (65890) wifi:bssid equal: ss_state=0x4
+11:12:18.114 > D (65990) wifi:bssid equal: ss_state=0x4
+11:12:18.217 > D (66090) wifi:bssid equal: ss_state=0x4
+11:12:18.319 > D (66190) wifi:bssid equal: ss_state=0x4
+11:12:18.422 > D (66300) wifi:bssid equal: ss_state=0x4
+11:12:18.524 > D (66400) wifi:bssid equal: ss_state=0x4
+11:12:18.626 > D (66500) wifi:bssid equal: ss_state=0x4
+11:12:18.729 > D (66600) wifi:bssid equal: ss_state=0x4
+11:12:18.831 > D (66710) wifi:bssid equal: ss_state=0x4
+11:12:18.933 > D (66810) wifi:bssid equal: ss_state=0x4
+11:12:19.035 > D (66910) wifi:bssid equal: ss_state=0x4
+11:12:19.138 > D (67010) wifi:bssid equal: ss_state=0x4
+11:12:19.241 > D (67120) wifi:bssid equal: ss_state=0x4
+11:12:19.343 > D (67220) wifi:bssid equal: ss_state=0x4
+11:12:19.445 > D (67320) wifi:bssid equal: ss_state=0x4
+11:12:19.548 > D (67420) wifi:bssid equal: ss_state=0x4
+11:12:19.650 > D (67530) wifi:bssid equal: ss_state=0x4
+11:12:19.755 > D (67630) wifi:bssid equal: ss_state=0x4
+11:12:19.855 > D (67730) wifi:bssid equal: ss_state=0x4
+11:12:19.956 > D (67830) wifi:bssid equal: ss_state=0x4
+11:12:20.060 > D (67940) wifi:bssid equal: ss_state=0x4
+11:12:20.162 > D (68040) wifi:bssid equal: ss_state=0x4
+11:12:20.264 > D (68140) wifi:bssid equal: ss_state=0x4
+11:12:20.366 > D (68240) wifi:bssid equal: ss_state=0x4
+11:12:20.469 > D (68340) wifi:bssid equal: ss_state=0x4
+11:12:20.571 > D (68450) wifi:bssid equal: ss_state=0x4
+11:12:20.674 > D (68550) wifi:bssid equal: ss_state=0x4
+11:12:20.777 > D (68650) wifi:bssid equal: ss_state=0x4
+11:12:20.878 > D (68750) wifi:bssid equal: ss_state=0x4
+11:12:20.981 > D (68860) wifi:bssid equal: ss_state=0x4
+11:12:21.083 > D (68960) wifi:bssid equal: ss_state=0x4
+11:12:21.186 > D (69060) wifi:bssid equal: ss_state=0x4
+11:12:21.289 > D (69160) wifi:bssid equal: ss_state=0x4
+11:12:21.391 > D (69270) wifi:bssid equal: ss_state=0x4
+11:12:21.493 > D (69370) wifi:bssid equal: ss_state=0x4
+11:12:21.595 > D (69470) wifi:bssid equal: ss_state=0x4
+11:12:21.699 > D (69570) wifi:bssid equal: ss_state=0x4
+11:12:21.800 > D (69680) wifi:bssid equal: ss_state=0x4
+11:12:21.903 > D (69780) wifi:bssid equal: ss_state=0x4
+11:12:22.005 > D (69880) wifi:bssid equal: ss_state=0x4
+11:12:22.107 > D (69980) wifi:bssid equal: ss_state=0x4
+11:12:22.211 > D (70090) wifi:bssid equal: ss_state=0x4
+11:12:22.312 > D (70190) wifi:bssid equal: ss_state=0x4
+11:12:22.414 > D (70290) wifi:bssid equal: ss_state=0x4
+11:12:22.518 > D (70390) wifi:bssid equal: ss_state=0x4
+11:12:22.619 > D (70500) wifi:bssid equal: ss_state=0x4
+11:12:22.722 > D (70600) wifi:bssid equal: ss_state=0x4
+11:12:22.825 > D (70700) wifi:bssid equal: ss_state=0x4
+11:12:22.927 > D (70800) wifi:bssid equal: ss_state=0x4
+11:12:23.029 > D (70910) wifi:bssid equal: ss_state=0x4
+11:12:23.131 > D (71010) wifi:bssid equal: ss_state=0x4
+11:12:23.235 > D (71110) wifi:bssid equal: ss_state=0x4
+11:12:23.336 > D (71210) wifi:bssid equal: ss_state=0x4
+11:12:23.438 > D (71310) wifi:bssid equal: ss_state=0x4
+11:12:23.541 > D (71420) wifi:bssid equal: ss_state=0x4
+11:12:23.643 > D (71520) wifi:bssid equal: ss_state=0x4
+11:12:23.747 > D (71620) wifi:bssid equal: ss_state=0x4
+11:12:23.848 > D (71720) wifi:bssid equal: ss_state=0x4
+11:12:23.951 > D (71830) wifi:bssid equal: ss_state=0x4
+11:12:24.054 > D (71930) wifi:bssid equal: ss_state=0x4
+11:12:24.156 > D (72030) wifi:bssid equal: ss_state=0x4
+11:12:24.258 > D (72130) wifi:bssid equal: ss_state=0x4
+11:12:24.361 > D (72240) wifi:bssid equal: ss_state=0x4
+11:12:24.463 > D (72340) wifi:bssid equal: ss_state=0x4
+11:12:24.565 > D (72440) wifi:bssid equal: ss_state=0x4
+11:12:24.667 > D (72540) wifi:bssid equal: ss_state=0x4
+11:12:24.770 > D (72650) wifi:bssid equal: ss_state=0x4
+11:12:24.874 > D (72750) wifi:bssid equal: ss_state=0x4
+11:12:24.975 > D (72850) wifi:bssid equal: ss_state=0x4
+11:12:25.078 > D (72950) wifi:bssid equal: ss_state=0x4
+11:12:25.180 > D (73060) wifi:bssid equal: ss_state=0x4
+11:12:25.282 > D (73160) wifi:bssid equal: ss_state=0x4
+11:12:25.385 > D (73260) wifi:bssid equal: ss_state=0x4
+11:12:25.487 > D (73360) wifi:bssid equal: ss_state=0x4
+11:12:25.590 > D (73470) wifi:bssid equal: ss_state=0x4
+11:12:25.692 > D (73570) wifi:bssid equal: ss_state=0x4
+11:12:25.795 > D (73670) wifi:bssid equal: ss_state=0x4
+11:12:25.897 > D (73770) wifi:bssid equal: ss_state=0x4
+11:12:25.999 > D (73870) wifi:bssid equal: ss_state=0x4
+11:12:26.101 > D (73980) wifi:bssid equal: ss_state=0x4
+11:12:26.204 > D (74080) wifi:bssid equal: ss_state=0x4
+11:12:26.307 > D (74180) wifi:bssid equal: ss_state=0x4
+11:12:26.408 > D (74280) wifi:bssid equal: ss_state=0x4
+11:12:26.511 > D (74390) wifi:bssid equal: ss_state=0x4
+11:12:26.614 > D (74490) wifi:bssid equal: ss_state=0x4
+11:12:26.716 > D (74590) wifi:bssid equal: ss_state=0x4
+11:12:26.818 > D (74690) wifi:bssid equal: ss_state=0x4
+11:12:26.921 > D (74800) wifi:bssid equal: ss_state=0x4
+11:12:27.023 > D (74900) wifi:bssid equal: ss_state=0x4
+11:12:27.125 > D (75000) wifi:bssid equal: ss_state=0x4
+11:12:27.228 > D (75100) wifi:bssid equal: ss_state=0x4
+11:12:27.329 > D (75210) wifi:bssid equal: ss_state=0x4
+11:12:27.433 > D (75310) wifi:bssid equal: ss_state=0x4
+11:12:27.535 > D (75410) wifi:bssid equal: ss_state=0x4
+11:12:27.740 > D (75620) wifi:bssid equal: ss_state=0x4
+11:12:27.842 > D (75720) wifi:bssid equal: ss_state=0x4
+11:12:27.945 > D (75820) wifi:bssid equal: ss_state=0x4
+11:12:28.047 > D (75920) wifi:bssid equal: ss_state=0x4
+11:12:28.150 > D (76030) wifi:bssid equal: ss_state=0x4
+11:12:28.251 > D (76130) wifi:bssid equal: ss_state=0x4
+11:12:28.355 > D (76230) wifi:bssid equal: ss_state=0x4
+11:12:28.457 > D (76330) wifi:bssid equal: ss_state=0x4
+11:12:28.559 > D (76430) wifi:bssid equal: ss_state=0x4
+11:12:28.661 > D (76540) wifi:bssid equal: ss_state=0x4
+11:12:28.764 > D (76640) wifi:bssid equal: ss_state=0x4
+11:12:28.866 > D (76740) wifi:bssid equal: ss_state=0x4
+11:12:28.969 > D (76840) wifi:bssid equal: ss_state=0x4
+11:12:29.071 > D (76950) wifi:bssid equal: ss_state=0x4
+11:12:29.173 > D (77050) wifi:bssid equal: ss_state=0x4
+11:12:29.276 > D (77150) wifi:bssid equal: ss_state=0x4
+11:12:29.378 > D (77250) wifi:bssid equal: ss_state=0x4
+11:12:29.481 > D (77360) wifi:bssid equal: ss_state=0x4
+11:12:29.583 > D (77460) wifi:bssid equal: ss_state=0x4
+11:12:29.685 > D (77560) wifi:bssid equal: ss_state=0x4
+11:12:29.787 > D (77660) wifi:bssid equal: ss_state=0x4
+11:12:29.890 > D (77770) wifi:bssid equal: ss_state=0x4
+11:12:29.994 > D (77870) wifi:bssid equal: ss_state=0x4
+11:12:30.094 > D (77970) wifi:bssid equal: ss_state=0x4
+11:12:30.198 > D (78070) wifi:bssid equal: ss_state=0x4
+11:12:30.300 > D (78180) wifi:bssid equal: ss_state=0x4
+11:12:30.403 > D (78280) wifi:bssid equal: ss_state=0x4
+11:12:30.504 > D (78380) wifi:bssid equal: ss_state=0x4
+11:12:30.607 > D (78480) wifi:bssid equal: ss_state=0x4
+11:12:30.710 > D (78590) wifi:bssid equal: ss_state=0x4
+11:12:30.812 > D (78690) wifi:bssid equal: ss_state=0x4
+11:12:30.913 > D (78790) wifi:bssid equal: ss_state=0x4
+11:12:31.017 > D (78890) wifi:bssid equal: ss_state=0x4
+11:12:31.120 > D (78990) wifi:bssid equal: ss_state=0x4
+11:12:31.221 > D (79100) wifi:bssid equal: ss_state=0x4
+11:12:31.324 > D (79200) wifi:bssid equal: ss_state=0x4
+11:12:31.427 > D (79300) wifi:bssid equal: ss_state=0x4
+11:12:31.529 > D (79400) wifi:bssid equal: ss_state=0x4
+11:12:31.632 > D (79510) wifi:bssid equal: ss_state=0x4
+11:12:31.733 > D (79610) wifi:bssid equal: ss_state=0x4
+11:12:31.835 > D (79710) wifi:bssid equal: ss_state=0x4
+11:12:31.938 > D (79810) wifi:bssid equal: ss_state=0x4
+11:12:32.040 > D (79920) wifi:bssid equal: ss_state=0x4
+11:12:32.143 > D (80020) wifi:bssid equal: ss_state=0x4
+11:12:32.246 > D (80120) wifi:bssid equal: ss_state=0x4
+11:12:32.347 > D (80220) wifi:bssid equal: ss_state=0x4
+11:12:32.450 > D (80330) wifi:bssid equal: ss_state=0x4
+11:12:32.555 > D (80430) wifi:bssid equal: ss_state=0x4
+11:12:32.655 > D (80530) wifi:bssid equal: ss_state=0x4
+11:12:32.757 > D (80630) wifi:bssid equal: ss_state=0x4
+11:12:32.860 > D (80740) wifi:bssid equal: ss_state=0x4
+11:12:32.963 > D (80840) wifi:bssid equal: ss_state=0x4
+11:12:33.064 > D (80940) wifi:bssid equal: ss_state=0x4
+11:12:33.167 > D (81040) wifi:bssid equal: ss_state=0x4
+11:12:33.269 > D (81150) wifi:bssid equal: ss_state=0x4
+11:12:33.372 > D (81250) wifi:bssid equal: ss_state=0x4
+11:12:33.473 > D (81350) wifi:bssid equal: ss_state=0x4
+11:12:33.577 > D (81450) wifi:bssid equal: ss_state=0x4
+11:12:33.680 > D (81560) wifi:bssid equal: ss_state=0x4
+11:12:33.781 > D (81660) wifi:bssid equal: ss_state=0x4
+11:12:33.884 > D (81760) wifi:bssid equal: ss_state=0x4
+11:12:33.987 > D (81860) wifi:bssid equal: ss_state=0x4
+11:12:34.088 > D (81960) wifi:bssid equal: ss_state=0x4
+11:12:34.191 > D (82070) wifi:bssid equal: ss_state=0x4
+11:12:34.293 > D (82170) wifi:bssid equal: ss_state=0x4
+11:12:34.396 > D (82270) wifi:bssid equal: ss_state=0x4
+11:12:34.499 > D (82370) wifi:bssid equal: ss_state=0x4
+11:12:34.600 > D (82480) wifi:bssid equal: ss_state=0x4
+11:12:34.703 > D (82580) wifi:bssid equal: ss_state=0x4
+11:12:34.805 > D (82680) wifi:bssid equal: ss_state=0x4
+11:12:34.907 > D (82780) wifi:bssid equal: ss_state=0x4
+11:12:35.000 > D (82890) wifi:bssid equal: ss_state=0x4
+11:12:35.112 > D (82990) wifi:bssid equal: ss_state=0x4
+11:12:35.201 > D (83090) wifi:bssid equal: ss_state=0x4
+11:12:35.313 > D (83190) wifi:bssid equal: ss_state=0x4
+11:12:35.407 > D (83300) wifi:bssid equal: ss_state=0x4
+11:12:35.517 > D (83400) wifi:bssid equal: ss_state=0x4
+11:12:35.625 > D (83500) wifi:bssid equal: ss_state=0x4
+11:12:35.720 > D (83600) wifi:bssid equal: ss_state=0x4
+11:12:35.830 > D (83710) wifi:bssid equal: ss_state=0x4
+11:12:35.927 > D (83810) wifi:bssid equal: ss_state=0x4
+11:12:36.032 > D (83910) wifi:bssid equal: ss_state=0x4
+11:12:36.126 > D (84010) wifi:bssid equal: ss_state=0x4
+11:12:36.239 > D (84120) wifi:bssid equal: ss_state=0x4
+11:12:36.329 > D (84220) wifi:bssid equal: ss_state=0x4
+11:12:36.443 > D (84320) wifi:bssid equal: ss_state=0x4
+11:12:36.532 > D (84420) wifi:bssid equal: ss_state=0x4
+11:12:36.643 > D (84520) wifi:bssid equal: ss_state=0x4
+11:12:36.751 > D (84630) wifi:bssid equal: ss_state=0x4
+11:12:36.845 > D (84730) wifi:bssid equal: ss_state=0x4
+11:12:36.954 > D (84830) wifi:bssid equal: ss_state=0x4
+11:12:37.058 > D (84930) wifi:bssid equal: ss_state=0x4
+11:12:37.158 > D (85040) wifi:bssid equal: ss_state=0x4
+11:12:37.252 > D (85140) wifi:bssid equal: ss_state=0x4
+11:12:37.362 > D (85240) wifi:bssid equal: ss_state=0x4
+11:12:37.455 > D (85340) wifi:bssid equal: ss_state=0x4
+11:12:37.566 > D (85450) wifi:bssid equal: ss_state=0x4
+11:12:37.673 > D (85550) wifi:bssid equal: ss_state=0x4
+11:12:37.767 > D (85650) wifi:bssid equal: ss_state=0x4
+11:12:37.876 > D (85750) wifi:bssid equal: ss_state=0x4
+11:12:37.970 > D (85860) wifi:bssid equal: ss_state=0x4
+11:12:38.079 > D (85960) wifi:bssid equal: ss_state=0x4
+11:12:38.184 > D (86060) wifi:bssid equal: ss_state=0x4
+11:12:38.285 > D (86160) wifi:bssid equal: ss_state=0x4
+11:12:38.390 > D (86270) wifi:bssid equal: ss_state=0x4
+11:12:38.486 > D (86370) wifi:bssid equal: ss_state=0x4
+11:12:38.595 > D (86470) wifi:bssid equal: ss_state=0x4
+11:12:38.688 > D (86570) wifi:bssid equal: ss_state=0x4
+11:12:38.787 > D (86680) wifi:bssid equal: ss_state=0x4
+11:12:38.902 > D (86780) wifi:bssid equal: ss_state=0x4
+11:12:39.001 > D (86880) wifi:bssid equal: ss_state=0x4
+11:12:39.105 > D (86980) wifi:bssid equal: ss_state=0x4
+11:12:39.205 > D (87080) wifi:bssid equal: ss_state=0x4
+11:12:39.304 > D (87190) wifi:bssid equal: ss_state=0x4
+11:12:39.413 > D (87290) wifi:bssid equal: ss_state=0x4
+11:12:39.516 > D (87390) wifi:bssid equal: ss_state=0x4
+11:12:39.609 > D (87490) wifi:bssid equal: ss_state=0x4
+11:12:39.721 > D (87600) wifi:bssid equal: ss_state=0x4
+11:12:39.813 > D (87700) wifi:bssid equal: ss_state=0x4
+11:12:39.924 > D (87800) wifi:bssid equal: ss_state=0x4
+11:12:40.017 > D (87900) wifi:bssid equal: ss_state=0x4
+11:12:40.126 > D (88010) wifi:bssid equal: ss_state=0x4
+11:12:40.237 > D (88110) wifi:bssid equal: ss_state=0x4
+11:12:40.332 > D (88210) wifi:bssid equal: ss_state=0x4
+11:12:40.438 > D (88310) wifi:bssid equal: ss_state=0x4
+11:12:40.539 > D (88420) wifi:bssid equal: ss_state=0x4
+11:12:40.642 > D (88520) wifi:bssid equal: ss_state=0x4
+11:12:40.744 > D (88620) wifi:bssid equal: ss_state=0x4
+11:12:40.846 > D (88720) wifi:bssid equal: ss_state=0x4
+11:12:40.938 > D (88830) wifi:bssid equal: ss_state=0x4
+11:12:41.049 > D (88930) wifi:bssid equal: ss_state=0x4
+11:12:41.141 > D (89030) wifi:bssid equal: ss_state=0x4
+11:12:41.251 > D (89130) wifi:bssid equal: ss_state=0x4
+11:12:41.345 > D (89240) wifi:bssid equal: ss_state=0x4
+11:12:41.462 > D (89340) wifi:bssid equal: ss_state=0x4
+11:12:41.564 > D (89440) wifi:bssid equal: ss_state=0x4
+11:12:41.666 > D (89540) wifi:bssid equal: ss_state=0x4
+11:12:41.769 > D (89640) wifi:bssid equal: ss_state=0x4
+11:12:41.864 > D (89750) wifi:bssid equal: ss_state=0x4
+11:12:41.969 > D (89850) wifi:bssid equal: ss_state=0x4
+11:12:42.063 > D (89950) wifi:bssid equal: ss_state=0x4
+11:12:42.173 > D (90050) wifi:bssid equal: ss_state=0x4
+11:12:42.267 > D (90160) wifi:bssid equal: ss_state=0x4
+11:12:42.376 > D (90260) wifi:bssid equal: ss_state=0x4
+11:12:42.486 > D (90360) wifi:bssid equal: ss_state=0x4
+11:12:42.580 > D (90460) wifi:bssid equal: ss_state=0x4
+11:12:42.689 > D (90570) wifi:bssid equal: ss_state=0x4
+11:12:42.782 > D (90670) wifi:bssid equal: ss_state=0x4
+11:12:42.896 > D (90770) wifi:bssid equal: ss_state=0x4
+11:12:42.985 > D (90870) wifi:bssid equal: ss_state=0x4
+11:12:43.095 > D (90980) wifi:bssid equal: ss_state=0x4
+11:12:43.202 > D (91080) wifi:bssid equal: ss_state=0x4
+11:12:43.305 > D (91180) wifi:bssid equal: ss_state=0x4
+11:12:43.407 > D (91280) wifi:bssid equal: ss_state=0x4
+11:12:43.504 > D (91390) wifi:bssid equal: ss_state=0x4
+11:12:43.605 > D (91490) wifi:bssid equal: ss_state=0x4
+11:12:43.705 > D (91590) wifi:bssid equal: ss_state=0x4
+11:12:43.813 > D (91690) wifi:bssid equal: ss_state=0x4
+11:12:43.908 > D (91800) wifi:bssid equal: ss_state=0x4
+11:12:44.022 > D (91900) wifi:bssid equal: ss_state=0x4
+11:12:44.124 > D (92000) wifi:bssid equal: ss_state=0x4
+11:12:44.219 > D (92100) wifi:bssid equal: ss_state=0x4
+11:12:44.329 > D (92210) wifi:bssid equal: ss_state=0x4
+11:12:44.431 > D (92310) wifi:bssid equal: ss_state=0x4
+11:12:44.533 > D (92410) wifi:bssid equal: ss_state=0x4
+11:12:44.626 > D (92510) wifi:bssid equal: ss_state=0x4
+11:12:44.735 > D (92610) wifi:bssid equal: ss_state=0x4
+11:12:44.834 > D (92720) wifi:bssid equal: ss_state=0x4
+11:12:44.939 > D (92820) wifi:bssid equal: ss_state=0x4
+11:12:45.032 > D (92920) wifi:bssid equal: ss_state=0x4
+11:12:45.142 > D (93020) wifi:bssid equal: ss_state=0x4
+11:12:45.251 > D (93130) wifi:bssid equal: ss_state=0x4
+11:12:45.345 > D (93230) wifi:bssid equal: ss_state=0x4
+11:12:45.455 > D (93330) wifi:bssid equal: ss_state=0x4
+11:12:45.548 > D (93430) wifi:bssid equal: ss_state=0x4
+11:12:45.657 > D (93540) wifi:bssid equal: ss_state=0x4
+11:12:45.760 > D (93640) wifi:bssid equal: ss_state=0x4
+11:12:45.865 > D (93740) wifi:bssid equal: ss_state=0x4
+11:12:45.954 > D (93840) wifi:bssid equal: ss_state=0x4
+11:12:46.063 > D (93950) wifi:bssid equal: ss_state=0x4
+11:12:46.173 > D (94050) wifi:bssid equal: ss_state=0x4
+11:12:46.267 > D (94150) wifi:bssid equal: ss_state=0x4
+11:12:46.376 > D (94250) wifi:bssid equal: ss_state=0x4
+11:12:46.470 > D (94360) wifi:bssid equal: ss_state=0x4
+11:12:46.579 > D (94460) wifi:bssid equal: ss_state=0x4
+11:12:46.673 > D (94560) wifi:bssid equal: ss_state=0x4
+11:12:46.782 > D (94660) wifi:bssid equal: ss_state=0x4
+11:12:46.888 > D (94770) wifi:bssid equal: ss_state=0x4
+11:12:46.985 > D (94870) wifi:bssid equal: ss_state=0x4
+11:12:47.094 > D (94970) wifi:bssid equal: ss_state=0x4
+11:12:47.196 > D (95070) wifi:bssid equal: ss_state=0x4
+11:12:47.298 > D (95170) wifi:bssid equal: ss_state=0x4
+11:12:47.392 > D (95280) wifi:bssid equal: ss_state=0x4
+11:12:47.501 > D (95380) wifi:bssid equal: ss_state=0x4
+11:12:47.605 > D (95480) wifi:bssid equal: ss_state=0x4
+11:12:47.708 > D (95580) wifi:bssid equal: ss_state=0x4
+11:12:47.811 > D (95690) wifi:bssid equal: ss_state=0x4
+11:12:47.913 > D (95790) wifi:bssid equal: ss_state=0x4
+11:12:48.001 > D (95890) wifi:bssid equal: ss_state=0x4
+11:12:48.111 > D (95990) wifi:bssid equal: ss_state=0x4
+11:12:48.220 > D (96100) wifi:bssid equal: ss_state=0x4
+11:12:48.313 > D (96200) wifi:bssid equal: ss_state=0x4
+11:12:48.423 > D (96300) wifi:bssid equal: ss_state=0x4
+11:12:48.527 > D (96400) wifi:bssid equal: ss_state=0x4
+11:12:48.628 > D (96510) wifi:bssid equal: ss_state=0x4
+11:12:48.727 > D (96610) wifi:bssid equal: ss_state=0x4
+11:12:48.828 > D (96710) wifi:bssid equal: ss_state=0x4
+11:12:48.929 > D (96810) wifi:bssid equal: ss_state=0x4
+11:12:49.032 > D (96920) wifi:bssid equal: ss_state=0x4
+11:12:49.132 > D (97020) wifi:bssid equal: ss_state=0x4
+11:12:49.230 > D (97120) wifi:bssid equal: ss_state=0x4
+11:12:49.344 > D (97220) wifi:bssid equal: ss_state=0x4
+11:12:49.439 > D (97330) wifi:bssid equal: ss_state=0x4
+11:12:49.547 > D (97430) wifi:bssid equal: ss_state=0x4
+11:12:49.648 > D (97530) wifi:bssid equal: ss_state=0x4
+11:12:49.751 > D (97630) wifi:bssid equal: ss_state=0x4
+11:12:49.845 > D (97730) wifi:bssid equal: ss_state=0x4
+11:12:49.954 > D (97840) wifi:bssid equal: ss_state=0x4
+11:12:50.157 > D (98040) wifi:bssid equal: ss_state=0x4
+11:12:50.266 > D (98140) wifi:bssid equal: ss_state=0x4
+11:12:50.361 > D (98250) wifi:bssid equal: ss_state=0x4
+11:12:50.470 > D (98350) wifi:bssid equal: ss_state=0x4
+11:12:50.563 > D (98450) wifi:bssid equal: ss_state=0x4
+11:12:50.673 > D (98550) wifi:bssid equal: ss_state=0x4
+11:12:50.779 > D (98660) wifi:bssid equal: ss_state=0x4
+11:12:50.882 > D (98760) wifi:bssid equal: ss_state=0x4
+11:12:50.985 > D (98860) wifi:bssid equal: ss_state=0x4
+11:12:51.087 > D (98960) wifi:bssid equal: ss_state=0x4
+11:12:51.189 > D (99070) wifi:bssid equal: ss_state=0x4
+11:12:51.292 > D (99170) wifi:bssid equal: ss_state=0x4
+11:12:51.395 > D (99270) wifi:bssid equal: ss_state=0x4
+11:12:51.496 > D (99370) wifi:bssid equal: ss_state=0x4
+11:12:51.598 > D (99480) wifi:bssid equal: ss_state=0x4
+11:12:51.701 > D (99580) wifi:bssid equal: ss_state=0x4
+11:12:51.804 > D (99680) wifi:bssid equal: ss_state=0x4
+11:12:51.905 > D (99780) wifi:bssid equal: ss_state=0x4
+11:12:52.009 > D (99890) wifi:bssid equal: ss_state=0x4
+11:12:52.111 > D (99990) wifi:bssid equal: ss_state=0x4
+11:12:52.214 > D (100090) wifi:bssid equal: ss_state=0x4
+11:12:52.316 > D (100190) wifi:bssid equal: ss_state=0x4
+11:12:52.419 > D (100290) wifi:bssid equal: ss_state=0x4
+11:12:52.521 > D (100400) wifi:bssid equal: ss_state=0x4
+11:12:52.624 > D (100500) wifi:bssid equal: ss_state=0x4
+11:12:52.726 > D (100600) wifi:bssid equal: ss_state=0x4
+11:12:52.827 > D (100700) wifi:bssid equal: ss_state=0x4
+11:12:52.931 > D (100810) wifi:bssid equal: ss_state=0x4
+11:12:53.035 > D (100910) wifi:bssid equal: ss_state=0x4
+11:12:53.135 > D (101010) wifi:bssid equal: ss_state=0x4
+11:12:53.238 > D (101110) wifi:bssid equal: ss_state=0x4
+11:12:53.340 > D (101220) wifi:bssid equal: ss_state=0x4
+11:12:53.442 > D (101320) wifi:bssid equal: ss_state=0x4
+11:12:53.545 > D (101420) wifi:bssid equal: ss_state=0x4
+11:12:53.647 > D (101520) wifi:bssid equal: ss_state=0x4
+11:12:53.749 > D (101630) wifi:bssid equal: ss_state=0x4
+11:12:53.852 > D (101730) wifi:bssid equal: ss_state=0x4
+11:12:53.955 > D (101830) wifi:bssid equal: ss_state=0x4
+11:12:54.057 > D (101930) wifi:bssid equal: ss_state=0x4
+11:12:54.159 > D (102040) wifi:bssid equal: ss_state=0x4
+11:12:54.262 > D (102140) wifi:bssid equal: ss_state=0x4
+11:12:54.364 > D (102240) wifi:bssid equal: ss_state=0x4
+11:12:54.466 > D (102340) wifi:bssid equal: ss_state=0x4
+11:12:54.569 > D (102450) wifi:bssid equal: ss_state=0x4
+11:12:54.671 > D (102550) wifi:bssid equal: ss_state=0x4
+11:12:54.774 > D (102650) wifi:bssid equal: ss_state=0x4
+11:12:54.876 > D (102750) wifi:bssid equal: ss_state=0x4
+11:12:54.979 > D (102860) wifi:bssid equal: ss_state=0x4
+11:12:55.081 > D (102960) wifi:bssid equal: ss_state=0x4
+11:12:55.183 > D (103060) wifi:bssid equal: ss_state=0x4
+11:12:55.285 > D (103160) wifi:bssid equal: ss_state=0x4
+11:12:55.388 > D (103260) wifi:bssid equal: ss_state=0x4
+11:12:55.490 > D (103370) wifi:bssid equal: ss_state=0x4
+11:12:55.594 > D (103470) wifi:bssid equal: ss_state=0x4
+11:12:55.695 > D (103570) wifi:bssid equal: ss_state=0x4
+11:12:55.797 > D (103670) wifi:bssid equal: ss_state=0x4
+11:12:55.899 > D (103780) wifi:bssid equal: ss_state=0x4
+11:12:56.002 > D (103880) wifi:bssid equal: ss_state=0x4
+11:12:56.105 > D (103980) wifi:bssid equal: ss_state=0x4
+11:12:56.206 > D (104080) wifi:bssid equal: ss_state=0x4
+11:12:56.309 > D (104190) wifi:bssid equal: ss_state=0x4
+11:12:56.411 > D (104290) wifi:bssid equal: ss_state=0x4
+11:12:56.501 > D (104390) wifi:bssid equal: ss_state=0x4
+11:12:56.616 > D (104490) wifi:bssid equal: ss_state=0x4
+11:12:56.719 > D (104600) wifi:bssid equal: ss_state=0x4
+11:12:56.821 > D (104700) wifi:bssid equal: ss_state=0x4
+11:12:56.923 > D (104800) wifi:bssid equal: ss_state=0x4
+11:12:57.026 > D (104900) wifi:bssid equal: ss_state=0x4
+11:12:57.128 > D (105010) wifi:bssid equal: ss_state=0x4
+11:12:57.231 > D (105110) wifi:bssid equal: ss_state=0x4
+11:12:57.333 > D (105210) wifi:bssid equal: ss_state=0x4
+11:12:57.435 > D (105310) wifi:bssid equal: ss_state=0x4
+11:12:57.538 > D (105420) wifi:bssid equal: ss_state=0x4
+11:12:57.640 > D (105520) wifi:bssid equal: ss_state=0x4
+11:12:57.742 > D (105620) wifi:bssid equal: ss_state=0x4
+11:12:57.845 > D (105720) wifi:bssid equal: ss_state=0x4
+11:12:57.947 > D (105820) wifi:bssid equal: ss_state=0x4
+11:12:58.050 > D (105930) wifi:bssid equal: ss_state=0x4
+11:12:58.152 > D (106030) wifi:bssid equal: ss_state=0x4
+11:12:58.357 > D (106230) wifi:bssid equal: ss_state=0x4
+11:12:58.460 > D (106340) wifi:bssid equal: ss_state=0x4
+11:12:58.562 > D (106440) wifi:bssid equal: ss_state=0x4
+11:12:58.664 > D (106540) wifi:bssid equal: ss_state=0x4
+11:12:58.767 > D (106640) wifi:bssid equal: ss_state=0x4
+11:12:58.869 > D (106750) wifi:bssid equal: ss_state=0x4
+11:12:58.971 > D (106850) wifi:bssid equal: ss_state=0x4
+11:12:59.074 > D (106950) wifi:bssid equal: ss_state=0x4
+11:12:59.177 > D (107050) wifi:bssid equal: ss_state=0x4
+11:12:59.278 > D (107160) wifi:bssid equal: ss_state=0x4
+11:12:59.382 > D (107260) wifi:bssid equal: ss_state=0x4
+11:12:59.484 > D (107360) wifi:bssid equal: ss_state=0x4
+11:12:59.586 > D (107460) wifi:bssid equal: ss_state=0x4
+11:12:59.689 > D (107570) wifi:bssid equal: ss_state=0x4
+11:12:59.791 > D (107670) wifi:bssid equal: ss_state=0x4
+11:12:59.893 > D (107770) wifi:bssid equal: ss_state=0x4
+11:12:59.996 > D (107870) wifi:bssid equal: ss_state=0x4
+11:13:00.098 > D (107980) wifi:bssid equal: ss_state=0x4
+11:13:00.201 > D (108080) wifi:bssid equal: ss_state=0x4
+11:13:00.303 > D (108180) wifi:bssid equal: ss_state=0x4

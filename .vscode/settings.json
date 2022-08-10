@@ -68,7 +68,9 @@
         "unordered_map": "c",
         "fstream": "c",
         "chrono": "c",
-        "algorithm": "c"
+        "algorithm": "c",
+        "gpio_ll.h": "c",
+        "gpio_types.h": "c"
     },
     "cmake.cmakePath": "c:\\Users\\Harald\\.platformio\\packages\\tool-cmake\\bin\\cmake.exe"
 }

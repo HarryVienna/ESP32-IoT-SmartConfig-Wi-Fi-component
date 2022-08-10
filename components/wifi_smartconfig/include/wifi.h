@@ -23,6 +23,10 @@ struct wifi_s {
 
     esp_err_t (*smart_connect)(wifi_t *wifi);
 
+    esp_err_t (*start)(wifi_t *wifi);
+
+    esp_err_t (*stop)(wifi_t *wifi);
+
     esp_err_t (*init_sntp)(wifi_t *wifi);
 
     esp_err_t (*init_timezone)(wifi_t *wifi);

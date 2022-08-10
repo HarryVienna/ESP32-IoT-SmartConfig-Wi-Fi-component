@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdbool.h>
 #include <string.h>
 #include <time.h>
 
@@ -20,7 +21,7 @@
 
 #include "wifi.h"
 
-#define MAXIMUM_RETRY 5
+#define MAXIMUM_RETRY 10
 #define NVS_NAMESPACE "WIFI"
 #define TIMEZONE_VALUE "TZ"
 
@@ -41,6 +42,7 @@ static EventGroupHandle_t s_wifi_event_group;
 static void connect_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data);
 
 static int s_retry_num;
+static bool s_connected;
 
 typedef struct {
     wifi_t parent;
@@ -147,13 +149,14 @@ static esp_err_t smartconfig_connect(wifi_t *wifi)
         return ESP_FAIL;
     }
     if(strlen((const char*) wifi_config.sta.ssid)){
-        ESP_LOGI(TAG, "Flash SSID:%s", wifi_config.sta.ssid);
-        ESP_LOGI(TAG, "Flash Password:%s", wifi_config.sta.password);
+        ESP_LOGI(TAG, "Flash SSID: %s", wifi_config.sta.ssid);
+        ESP_LOGI(TAG, "Flash Password: %s", wifi_config.sta.password);
     }
     else {
         ESP_LOGE(TAG, "Nothing in flash");
     }
-
+    
+    s_connected = false;
     
     /* -------------- Try to connect with stored settings ------------- */
     s_retry_num = 0;
@@ -227,6 +230,26 @@ static esp_err_t smartconfig_connect(wifi_t *wifi)
 
 }
 
+static esp_err_t smartconfig_start(wifi_t *wifi)
+{
+    if (esp_wifi_start() != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to start wifi");
+        return ESP_FAIL;
+    }
+
+    return ESP_OK;
+}
+
+static esp_err_t smartconfig_stop(wifi_t *wifi)
+{
+    if (esp_wifi_stop() != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to stop wifi");
+        return ESP_FAIL;
+    }
+
+    return ESP_OK;
+}
+
 static void connect_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
 {
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
@@ -240,16 +263,26 @@ static void connect_event_handler(void* arg, esp_event_base_t event_base, int32_
         ESP_LOGI(TAG,"WIFI_EVENT_STA_STOP");
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_CONNECTED) {        
         ESP_LOGI(TAG,"WIFI_EVENT_STA_CONNECTED");
+        s_connected = true;
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
         ESP_LOGI(TAG,"WIFI_EVENT_STA_DISCONNECTED");
-        if (s_retry_num < MAXIMUM_RETRY) {
-            ESP_LOGI(TAG, "retry to connect to the AP");
-            esp_wifi_connect();
-            vTaskDelay((1000 * 60) / portTICK_PERIOD_MS); // Wait 1 minute
-            s_retry_num++;
-        } else {
-            xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+        if (s_connected) { // WIFI was already connected. Perhaps router down? Try reconnecting 
+            while (true) {
+                esp_wifi_connect();
+                vTaskDelay((1000 * 60) / portTICK_PERIOD_MS); // Wait 1 minute
+            }            
         }
+        else {             // WIFI was not connected. So there is a problem
+            if (s_retry_num < MAXIMUM_RETRY) {
+                ESP_LOGI(TAG, "retry to connect to the AP");
+                esp_wifi_connect();
+                s_retry_num++;
+                
+            } else {
+                xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+            }
+        }
+
         ESP_LOGI(TAG,"connect to the AP fail");
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
         ESP_LOGI(TAG,"IP_EVENT_STA_GOT_IP");
@@ -266,8 +299,6 @@ static void connect_event_handler(void* arg, esp_event_base_t event_base, int32_
 
         smartconfig_event_got_ssid_pswd_t *evt = (smartconfig_event_got_ssid_pswd_t *)event_data;
         wifi_config_t wifi_config;
-        uint8_t ssid[33] = { 0 };
-        uint8_t password[65] = { 0 };
         uint8_t rvd_data[65] = { 0 };
 
         bzero(&wifi_config, sizeof(wifi_config_t));
@@ -278,13 +309,11 @@ static void connect_event_handler(void* arg, esp_event_base_t event_base, int32_
             memcpy(wifi_config.sta.bssid, evt->bssid, sizeof(wifi_config.sta.bssid));
         }
 
-        memcpy(ssid, evt->ssid, sizeof(evt->ssid));
-        memcpy(password, evt->password, sizeof(evt->password));
-        ESP_LOGI(TAG, "SSID:%s", ssid);
-        ESP_LOGI(TAG, "PASSWORD:%s", password);
+        ESP_LOGI(TAG, "SSID: %s", wifi_config.sta.ssid);
+        ESP_LOGI(TAG, "PASSWORD: %s", wifi_config.sta.password);
 
         ESP_ERROR_CHECK( esp_smartconfig_get_rvd_data(rvd_data, sizeof(rvd_data)) );
-        ESP_LOGI(TAG, "RVD_DATA:%s", rvd_data);
+        ESP_LOGI(TAG, "RVD_DATA: %s", rvd_data);
 
         nvs_handle_t my_handle;
         ESP_ERROR_CHECK(nvs_open(NVS_NAMESPACE, NVS_READWRITE, &my_handle));
@@ -380,6 +409,8 @@ wifi_t *wifi_new_smartconfig(const wifi_conf_t *config)
 
     smartconfig->parent.init = smartconfig_init;
     smartconfig->parent.connect = smartconfig_connect;
+    smartconfig->parent.start = smartconfig_start;
+    smartconfig->parent.stop = smartconfig_stop;
     smartconfig->parent.init_sntp = smartconfig_init_sntp;
     smartconfig->parent.init_timezone = smartconfig_init_timezone;
 
